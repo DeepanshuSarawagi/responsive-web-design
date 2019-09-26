@@ -2,11 +2,62 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>A tribute Page of Dr. APJ Abdul Kalam</title>
+    <title id="title">A tribute Page of Dr. APJ Abdul Kalam</title>
   </head>
+  <style>
+    body{
+      background: url(https://i.imgur.com/MJAkxbh.png);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5em;
+    }
+    #main{
+      text-align: center;
+    }
+    #img-div{
+      background-color: white;
+      width: 100%;
+      padding: auto;
+      margin: auto;
+      border-radius: 10px;
+    }
+    #image{
+      width: 75%;
+      margin-top: 10px;
+    }
+    #tribute-info{
+      font-style: italic;
+    }
+    @media (max-width: 500px){
+      img{
+        max-width: 100%;
+      }
+    }
+    .earlylife{
+      text-align: left;
+    }
+  </style>
   <body>
     <main id="main">
-      
+      <header>
+        <h1>Dr. APJ Abdul Kalam</h1>
+      </header>
+      <p><em>The Missile man of India</em></p>
+      <div id="img-div">
+        <figure>
+        <img id="image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="A picture of Dr.APJ Abdul Kalam">
+        <figcaption id="tribute-info">A beautiful picture of Dr. APJ Abdul Kalam with school students. </figcaption>
+        </figure>
+      </div>
+      <h2>Below is a timeline of Dr. APJ Abdul Kalam</h2>
+      <section>
+        <article class="earlylife">
+          <p>
+          <strong>Early Life: </strong>
+          <br>
+          Avul Pakir Jainulabdin Abdul Kalam born on <time datetime="1931-10-15"> October 15<sup>th</sup>, 1931 in a
+          pilgrimage center of Rameshwaram, Pamban Island, Tamilnadu.</p>
+        </article>
+      </section>
     </main>
   </body>
 </html>
