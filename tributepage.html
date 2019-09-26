@@ -32,8 +32,47 @@
         max-width: 100%;
       }
     }
+    section{
+      text-align: justify;
+    }
     .earlylife{
-      text-align: left;
+      display: grid;
+      grid-template-rows: repeat(auto-fill, 1fr);
+      grid-template-columns: repeat(auto-fill, 1fr);
+      align-items: center;
+      grid-gap: 10px;
+    }
+    .earlylife img{
+      width: 100%;
+      height: 75%;
+      display: grid;
+      grid-area: 1/1/2/2;
+    }
+    .earlylife p{
+      display: grid;
+      grid-area: 1/2/2/3;
+      font-size: 1em;
+      align-self: center;
+    }
+    .education{
+      display: grid;
+      grid-template-rows: repeat(auto-fill, 1fr);
+      grid-template-columns: repeat(auto-fill, 1fr);
+      align-items: center;
+      grid-gap: 10px;
+    }
+    .education img{
+      width: 50%;
+      height: 50%;
+      display: grid;
+      grid-area: 1/1/2/2;
+    }
+    .education p{
+      display: grid;
+      grid-area: 1/2/2/3;
+      font-size: 1em;
+      margin-right: 200px;
+      align-self: center;
     }
   </style>
   <body>
@@ -51,11 +90,18 @@
       <h2>Below is a timeline of Dr. APJ Abdul Kalam</h2>
       <section>
         <article class="earlylife">
+          <img src="https://religionworld.s3.amazonaws.com/uploads/2018/02/rameswaram6.jpg" alt="A picture of town Rameshwaram">
           <p>
           <strong>Early Life: </strong>
-          <br>
-          Avul Pakir Jainulabdin Abdul Kalam born on <time datetime="1931-10-15"> October 15<sup>th</sup>, 1931 in a
-          pilgrimage center of Rameshwaram, Pamban Island, Tamilnadu.</p>
+          Avul Pakir Jainulabdin Abdul Kalam born on October 15th, 1931 in a pilgrimage center of Rameshwaram, Pamban Island, Tamilnadu. His father Jainulabdeen was a boat owner and imam of a local mosque; his mother Ashiamma was a housewife.
+        His father owned a ferry that took Hindu pilgrims back and forth between Rameswaram and the now uninhabited Dhanushkodi.
+      Kalam was the youngest of four brothers and one sister in his family.</p>
+        </article>
+        <article class="education">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/St._Joseph%27s_College_Church%2C_Tiruchirappalli.jpg" alt="Dr. Kalam`s college">
+          <p><strong>Education: </strong>
+          Dr. Kalam was a bright student according to his teachers. He completed his
+        primary education from Schwartz Higher Secondary School, Ramanathapuram.</p>
         </article>
       </section>
     </main>
