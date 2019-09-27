@@ -35,44 +35,48 @@
     section{
       text-align: justify;
     }
-    .earlylife{
-      display: grid;
-      grid-template-rows: repeat(auto-fill, 1fr);
-      grid-template-columns: repeat(auto-fill, 1fr);
-      align-items: center;
-      grid-gap: 10px;
-    }
-    .earlylife img{
+    .section{
       width: 100%;
-      height: 75%;
       display: grid;
-      grid-area: 1/1/2/2;
-    }
-    .earlylife p{
-      display: grid;
-      grid-area: 1/2/2/3;
-      font-size: 1em;
-      align-self: center;
-    }
-    .education{
-      display: grid;
-      grid-template-rows: repeat(auto-fill, 1fr);
-      grid-template-columns: repeat(auto-fill, 1fr);
-      align-items: center;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
       grid-gap: 10px;
     }
-    .education img{
-      width: 50%;
-      height: 50%;
-      display: grid;
-      grid-area: 1/1/2/2;
+    #img{
+      width: 100%;
     }
-    .education p{
-      display: grid;
-      grid-area: 1/2/2/3;
+    #earlylife {
       font-size: 1em;
-      margin-right: 200px;
-      align-self: center;
+    }
+    #college{
+      width: 89%;
+    }
+    #education{
+      font-size: 1em;
+    }
+    #drdo{
+      width: 89.4%;
+    }
+    #career{
+      font-size: 1em;
+    }
+    #president{
+      width: 100%;
+    }
+    #tribute-link{
+      font-weight: bold;
+    }
+    footer{
+      background: lightgrey;
+      margin-top: 20px;
+      border-style: thick;
+    }
+    @media (max-width: 900px){
+      #image{
+        max-width: 50%;
+        font-size: 20px;
+      }
     }
   </style>
   <body>
@@ -88,22 +92,73 @@
         </figure>
       </div>
       <h2>Below is a timeline of Dr. APJ Abdul Kalam</h2>
-      <section>
-        <article class="earlylife">
-          <img src="https://religionworld.s3.amazonaws.com/uploads/2018/02/rameswaram6.jpg" alt="A picture of town Rameshwaram">
-          <p>
+      <section class="section">
+        <article>
+          <img id="img" src="https://religionworld.s3.amazonaws.com/uploads/2018/02/rameswaram6.jpg" alt="A picture of town Rameshwaram">
+          <p id="earlylife">
           <strong>Early Life: </strong>
           Avul Pakir Jainulabdin Abdul Kalam born on October 15th, 1931 in a pilgrimage center of Rameshwaram, Pamban Island, Tamilnadu. His father Jainulabdeen was a boat owner and imam of a local mosque; his mother Ashiamma was a housewife.
         His father owned a ferry that took Hindu pilgrims back and forth between Rameswaram and the now uninhabited Dhanushkodi.
       Kalam was the youngest of four brothers and one sister in his family.</p>
         </article>
-        <article class="education">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/St._Joseph%27s_College_Church%2C_Tiruchirappalli.jpg" alt="Dr. Kalam`s college">
-          <p><strong>Education: </strong>
+        <article>
+          <img id="college"src="https://www.hindustantimes.com/rf/image_size_640x362/HT/p1/2015/07/30/Incoming/Pictures/1374723_Wallpaper2.jpg" alt="Dr. Kalam`s college">
+          <p id="education"><strong>Education: </strong>
           Dr. Kalam was a bright student according to his teachers. He completed his
-        primary education from Schwartz Higher Secondary School, Ramanathapuram.</p>
+        primary education from Schwartz Higher Secondary School, Ramanathapuram.
+      And went on to graduate from Saint Joseph`s college, Thiruchirappalli. He
+    then moved to Madras Institue of technology to study Arerospace Engineerin and went
+    becoming <a href="#career">Scientist at DRDO.</a></p>
+        </article>
+        <article>
+          <img id="drdo" src="https://www.storypick.com/wp-content/uploads/2017/02/Dr-Kalam-1.jpg" alt="Dr.Kalam holding a satellite model">
+          <p id="career"><strong>Career: </strong>
+          After graduating from MIT in Arerospace Engineering, Dr. Kalam
+          joined as scientist at DRDO. He started his career by designing a small hovercraft, but remained unconvinced by his choice of a job at DRDO. Kalam was
+          also part of the INCOSPAR committee working under Vikram Sarabhai, the
+          renowned space scientist. In 1969, Kalam was transferred to the
+          Indian Space Research Organisation (ISRO) where he was the project
+          director of India's first Satellite Launch Vehicle (SLV-III) which
+          successfully deployed the Rohini satellite in near-earth orbit in July
+          1980; Kalam had first started work on an expandable rocket project independently
+          at DRDO in 1965. In 1969, Kalam received the government's approval
+           expanded the programme to include more engineers. DR. Kalam developed
+         several projects during this tenure as scientist at ISRO which earned him
+       the title <em>The Missile Man of India.</em> </p>
+        </article>
+        <article>
+          <img id="president" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Vladimir_Putin_with_Abdul_Kalam_26_January_2007.jpg" alt="Dr. Kalam seen in a picture with President Putin and the then PM Manmohan Singh">
+          <p id="Presidency"> <strong>Presidency: </strong>After his sucessful tenure at DRDO and ISRO, Dr. Kalam
+          was elected as the 11th President of India. During his term as president,
+          he was affectionately known as the People's President, saying
+          that signing the Office of Profit Bill was the toughest decision he had
+          taken during his tenure. At the end of his term, on 20 June 2007, Kalam
+          expressed his willingness to consider a second term in office provided
+          there was certainty about his victory in the 2007 presidential election.
+           However, two days later, he decided not to contest the Presidential
+           election again stating that he wanted to avoid involving Rashtrapati
+           Bhavan from any political processes. Many, many citizens have also
+           expressed the same wish. It only reflects their love and affection
+           for me and the aspiration of the people. I am really overwhelmed by
+           this support. This being their wish, I respect it.
+           I want to thank them for the trust they have in me.</p>
         </article>
       </section>
     </main>
+    <blockquote cite="https://www.brainyquote.com/authors/a-p-j-abdul-kalam-quotes">
+      Where there is righteousness in the heart, there is beauty in the character.
+      When there is beauty in the character, there is harmony in the home. When
+      there is harmony in the home, there is order in the nation. When there is
+      order in the nation, there is peace in the world.
+      <br>
+      <em>--Dr. Abdul Kalam</em>
+
+    </blockquote>
+    <div id="tribute-link">
+
+    To read more about this humble person, follow his wikipedia page
+    <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">here.</a>
+    </div>
+    <footer>Notes for this page are taken from the wikipedia link</footer>
   </body>
 </html>
