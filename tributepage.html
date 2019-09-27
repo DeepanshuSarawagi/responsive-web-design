@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -15,20 +16,22 @@
     }
     #img-div{
       background-color: white;
-      width: 100%;
+      display: block;
+      max-width: 100%;
       padding: auto;
       margin: auto;
       border-radius: 10px;
     }
     #image{
-      width: 75%;
-      margin-top: 10px;
+      display: block;
+      max-width: 75%;
+      margin: 0 auto;
     }
     #tribute-info{
       font-style: italic;
     }
     @media (max-width: 500px){
-      img{
+      image{
         max-width: 100%;
       }
     }
@@ -81,14 +84,14 @@
   </style>
   <body>
     <main id="main">
-      <header>
+      <header id="tribute-info">
         <h1>Dr. APJ Abdul Kalam</h1>
       </header>
       <p><em>The Missile man of India</em></p>
       <div id="img-div">
         <figure>
         <img id="image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="A picture of Dr.APJ Abdul Kalam">
-        <figcaption id="tribute-info">A beautiful picture of Dr. APJ Abdul Kalam with school students. </figcaption>
+        <figcaption id="img-caption">A beautiful picture of Dr. APJ Abdul Kalam with school students. </figcaption>
         </figure>
       </div>
       <h2>Below is a timeline of Dr. APJ Abdul Kalam</h2>
@@ -154,11 +157,9 @@
       <em>--Dr. Abdul Kalam</em>
 
     </blockquote>
-    <div id="tribute-link">
-
     To read more about this humble person, follow his wikipedia page
-    <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">here.</a>
-    </div>
+    <a id="tribute-link"  href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">here.</a>
+    </>
     <footer>Notes for this page are taken from the wikipedia link</footer>
   </body>
 </html>
