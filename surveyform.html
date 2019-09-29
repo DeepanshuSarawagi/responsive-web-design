@@ -18,19 +18,23 @@
       background: white;
       width: 85%;
       height: 100%;
-      position: relative;
-      margin: auto;
+      position: absolute;
+      margin: 0 auto;
     }
     .category{
       display: inline-block;
       text-align: right;
       width: 40%;
       margin-top: 10px;
+      padding: 5px;
+      vertical-align: middle;
     }
     .userInput{
       display: inline-block;
       width: 40%;
       text-align: left;
+      margin-top: 10px;
+      vertical-align: middle;
     }
     .nameField {
       width: 100%;
@@ -53,6 +57,13 @@
       height: 15px;
       border-radius: 2px;
     }
+    .optionField {
+      width: 50%;
+      border: 1px solid gray;
+      padding: 5px;
+      height: 20px;
+      border-radius: 2px;
+    }
   </style>
   <body>
     <header>
@@ -68,16 +79,26 @@
       <input class="nameField" name="name" type="text" id="name" placeholder="Enter your name" required>
     </div>
     <div class="category">
-    <label id="email-label" for="email">* Enter your email:</label>
+    <label id="email-label" for="email">* Email:</label>
   </div>
   <div class="userInput">
     <input class="emailField" name="email" type="email" id="email" placeholder="Enter your valid email address" required>
   </div>
   <div class="category">
-  <label id="age-label" for="age">* Enter your age:</label>
+  <label id="age-label" for="number">* Age:</label>
 </div>
 <div class="userInput">
-  <input class="ageField" name="age" type="number" id="age" placeholder="Enter your age" required>
+  <input class="ageField" name="age" type="number" id="number" min="12" max="65" placeholder="Enter your age" required>
+</div>
+<div class="category">
+<label id="dropdown" for="dropdown">Select the best option which describes you:</label>
+</div>
+<div class="userInput">
+<select class="optionField" name="dropdown" type="dropdown" id="dropdownMenu" required>
+<option disabled selected value>Choose the best option</option>
+<option value="Student">Student</option>
+<option value="Intern">Intern</option>
+<option value="Professional">Professional</option>
 </div>
     </form>
   </body>
