@@ -66,9 +66,15 @@
       height: 20px;
       border-radius: 2px;
     }
-    #radioButton{
+    #radioButton, #CheckboxOptions{
       display: flex;
       flex-direction: column;
+    }
+    .suggestions{
+      border: 1px solid gray;
+      width: 250px;
+      height: 100px;
+      text-align: justify;
     }
   </style>
   <body>
@@ -108,7 +114,7 @@
 </select>
 </div>
 <div class="category">
-<label id="radio" for="radio">Would you recommend FCC to your friends? </label>
+<label id="radio" for="radio">Would you recommend this page to your friends? </label>
 </div>
 <div class="userInput">
   <div id="radioButton">
@@ -119,6 +125,44 @@
   <label for="Not Sure">
   <input type="radio" name="recommend" value="Not Sure"> Not Sure</label>
 </div>
+</div>
+<div class="category">
+<label id="dropdown" for="dropdown">What do you like the most about this page?</label>
+</div>
+<div class="userInput">
+<select class="optionField" name="dropdown" type="dropdown" id="dropdownMenu" required>
+<option disabled selected value>Choose the best option</option>
+<option value="Display">Display</option>
+<option value="Font">Font</option>
+<option value="Background">Background</option>
+<option value="FontFamily">Font Family</option>
+<option value="Layout">Layout</option>
+</select>
+</div>
+<div class="category">
+<label id="checkbox" for="checkbox">In which areas do want us to improve? </label>
+</div>
+<div class="userInput">
+  <div id="CheckboxOptions">
+    <label for="Background Color">
+  <input type="checkbox" name="improve" value="Background Color" checked> Background Color</label>
+  <label for="Font Size">
+  <input type="checkbox" name="improve" value="Font Size"> Font Size</label>
+  <label for="Display">
+  <input type="checkbox" name="improve" value="Dispay"> Display</label>
+  <label for="Font Color">
+  <input type="checkbox" name="improve" value="Font Color"> Font Color</label>
+  <label for="Page Layout">
+  <input type="checkbox" name="improve" value="Page Layout"> Page Layout</label>
+  <label for="Survey Options">
+  <input type="checkbox" name="improve" value="Survey Options"> Survey Options</label>
+</div>
+</div>
+<div class="category">
+<label id="textarea" for="textarea">Any valuable suggestions?</label>
+</div>
+<div class="userInput">
+<textarea name="textare" rows="5" cols="40" style="border-radius: 5px" placeholder="Enter your valuable suggestions here.."></textarea>
 </div>
     </form>
   </body>
