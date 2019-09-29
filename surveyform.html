@@ -29,7 +29,7 @@
       width: 40%;
       margin-top: 10px;
       padding: 5px;
-      vertical-align: middle;
+      vertical-align: top;
     }
     .userInput{
       display: inline-block;
@@ -66,6 +66,10 @@
       height: 20px;
       border-radius: 2px;
     }
+    #radioButton{
+      display: flex;
+      flex-direction: column;
+    }
   </style>
   <body>
     <header>
@@ -101,6 +105,20 @@
 <option value="Student">Student</option>
 <option value="Intern">Intern</option>
 <option value="Professional">Professional</option>
+</select>
+</div>
+<div class="category">
+<label id="radio" for="radio">Would you recommend FCC to your friends? </label>
+</div>
+<div class="userInput">
+  <div id="radioButton">
+    <label for="Definitely">
+  <input type="radio" name="recommend" value="Definitely" checked> Definitely</label>
+  <label for="Mostly">
+  <input type="radio" name="recommend" value="Mostly"> Mostly</label>
+  <label for="Not Sure">
+  <input type="radio" name="recommend" value="Not Sure"> Not Sure</label>
+</div>
 </div>
     </form>
   </body>
