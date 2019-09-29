@@ -16,10 +16,42 @@
     }
     #survey-form{
       background: white;
-      width: 75%;
-      height: 80%;
-      position: absolute;
-      margin-left: 70px;
+      width: 85%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+    }
+    .category{
+      display: inline-block;
+      text-align: right;
+      width: 40%;
+      margin-top: 10px;
+    }
+    .userInput{
+      display: inline-block;
+      width: 40%;
+      text-align: left;
+    }
+    .nameField {
+      width: 100%;
+      border: 1px solid gray;
+      padding: 5px;
+      height: 15px;
+      border-radius: 2px;
+    }
+    .emailField {
+      width: 100%;
+      border: 1px solid gray;
+      padding: 5px;
+      height: 15px;
+      border-radius: 2px;
+    }
+    .ageField {
+      width: 50%;
+      border: 1px solid gray;
+      padding: 5px;
+      height: 15px;
+      border-radius: 2px;
     }
   </style>
   <body>
@@ -29,7 +61,24 @@
     <p id="description">This is a short survey form to understand user
     feedback</p>
     <form id="survey-form" action="index.html" method="GET">
-
+      <div class="category">
+      <label id="name-label" for="name">* Name:</label>
+    </div>
+    <div class="userInput">
+      <input class="nameField" name="name" type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="category">
+    <label id="email-label" for="email">* Enter your email:</label>
+  </div>
+  <div class="userInput">
+    <input class="emailField" name="email" type="email" id="email" placeholder="Enter your valid email address" required>
+  </div>
+  <div class="category">
+  <label id="age-label" for="age">* Enter your age:</label>
+</div>
+<div class="userInput">
+  <input class="ageField" name="age" type="number" id="age" placeholder="Enter your age" required>
+</div>
     </form>
   </body>
 </html>
