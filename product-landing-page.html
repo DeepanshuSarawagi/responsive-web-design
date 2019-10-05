@@ -22,12 +22,12 @@
       left: -90px;
     }
     #nav-bar{
-      background: transparent;
+      background: gray;
       position: fixed;
       text-align: right;
       top: 0px;
-      left: 0px;
-      width: 100%;
+      left: 200px;
+      width: 60%;
     }
     #nav-link{
       margin: 0px;
@@ -36,6 +36,102 @@
     nav li{
       display: inline;
       margin-right: 10px;
+    }
+    #features{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 2px;
+      grid-template-areas: "advert content"
+                            "advert content";
+      align-items: start;
+    }
+    #truck{
+      background: brown;
+      width: 50px;
+      display: grid;
+      grid-area: advert;
+      height: 15px;
+      margin-top: 40px;
+      margin-left: 0px;
+    }
+    .truck-container{
+      background: brown;
+      width: 15px;
+      height: 29px;
+      position: absolute;
+      margin-top: -29px;
+      margin-left: 35px;
+    }
+    .truck-container-glass{
+      background: brown;
+      width: 35px;
+      height: 29px;
+      position: absolute;
+      margin-top: -29px;
+      margin-left: 5px;
+      border-top-left-radius: 35px;
+    }
+    .truck-container-glass:after{
+      content: "";
+      background: white;
+      width: 25px;
+      height: 17px;
+      position: absolute;
+      margin-top: 7px;
+      margin-left: 10px;
+      border-top-left-radius: 45px;
+    }
+    .truck-load{
+      background: brown;
+      width: 40px;
+      height: 44px;
+      position: absolute;
+      margin-left: 50px;
+      margin-top: -29px;
+    }
+    .truck-wheel1{
+      background: brown;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 15px;
+      margin-top: 2px;
+    }
+    .truck-wheel1:after{
+      content: "";
+      background: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 0.49px;
+      transform: scale(0.6);
+    }
+    .truck-wheel2{
+      background: brown;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 55px;
+      margin-top: 2px;
+    }
+    .truck-wheel2:after{
+      content: "";
+      background: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 0.37px;
+      transform: scale(0.6);
+    }
+    #delivery{
+      display: grid;
+      grid-area: content;
+      align-self: start;
     }
   </style>
   <body>
@@ -46,14 +142,56 @@
       </div>
       <nav id="nav-bar">
         <ul id="nav-link">
-          <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
+          <li><a href="#history">Home</a></li>
+            <li><a href="#features">Features</a></li>
               <li><a href="#">Pricing</a></li>
                 <li><a href="#">About Us</a></li>
         </ul>
       </nav>
     </header>
+    <div id="history">
     <h2>Who are we?</h2>
-    <p>Lynk is a goods delivery company started by </p>
+    <p>Lynk is a freight delivery company started by Shekar and Abhinav, alumini of Northwestern
+    University, Chicago. We have pver 5000 driver partners with etablishment
+  in Chennai, Bengaluru and Hyderabad. </p>
+  <h2>How did the journey begin?</h2>
+  <p>When Shekhar (26) was in Pune for a wedding, he experienced first-hand the
+    difficulty in shifting goods around. Back in the US, he discussed it with
+    Abinav (24), and they decided to plunge into the intra-city logistic business
+    in India.</p>
+    <br>
+    The duo returned to India in 2015. “We started building up in small way by
+    working on the platform and model,” explains Abinav, adding that they spent
+    the initial 2-3 months studying the market and building the technology platform.
+    “We spent the first half of 2016 just doing data testing with a few customers
+    and drivers, and eventually launched the operations in June 2016,” he says.
+    <br>
+    It wasn’t easy starting up in the space. The founders had to deal with
+    questions on speed and timeliness of operations, as they had only few trucks
+    on board initially. “They also had concerns regarding the drivers’ reliability,
+    theft and damage of goods. The sales cycle were longer initially. It took us
+    the first few months to get these initial customers on board,” he adds.
+    <h2>How Lynk works?</h2>
+    <p>Lynk operates just like a cab aggregator, wherein it partners with truck
+      owners who attach their trucks with the platform. The startup’s app has
+      over 3.5 lakh downloads so far. The app is available for iOS and Android
+      as well.</p>
+    </div>
+      <h2>What do we promise?</h2>
+      <div id="features">
+      <div id="truck">
+        <div class="truck-container">
+        </div>
+        <div class="truck-container-glass">
+        </div>
+        <div class="truck-load">
+          </div>
+          <div class="truck-wheel1">
+          </div>
+          <div class="truck-wheel2">
+          </div>
+          </div>
+          <p id="delivery">We promise quick delivery the goods at any given day around the clock.</p>
+      </div>
   </body>
 </html>
