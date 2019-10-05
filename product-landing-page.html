@@ -209,31 +209,23 @@
       background: transparent;
       width: 33%;
       border: solid brown;
+      color: brown;
     }
     .premium{
       background: transparent;
       width: 33%;
       border: solid brown;
+      color: brown;
     }
-    .basic h1{
+    .basic h1, .premium h1{
       text-align: center;
       background: transparent;
-      color: brown;
       border: solid brown;
       border-width: 1px;
       margin: 0 auto;
     }
-    .premium h1{
+    .basic h2, .premium h2{
       text-align: center;
-      background: transparent;
-      color: brown;
-      border: solid brown;
-      border-width: 1px;
-      margin: 0 auto;
-    }
-    .basic, .premium h2{
-      text-align: center;
-      color: brown;
     }
   </style>
   <body>
@@ -313,10 +305,18 @@
         <div class="basic">
           <h1>Basic</h1>
           <h2>$50/year</h2>
+          <ol>
+            <li>Delivery on FCFS basis</li>
+            <li>Limited support</li>
+          </ol>
         </div>
         <div class="premium">
           <h1>Premium</h1>
           <h2>$100/year</h2>
+          <ol>
+          <li>Delivery on FCFS basis</li>
+          <li>Limited support</li>
+        </ol>
         </div>
       </div>
   </body>
