@@ -206,12 +206,34 @@
       height: 300px;
     }
     .basic{
-      background: red;
+      background: transparent;
       width: 33%;
+      border: solid brown;
     }
     .premium{
-      background: blue;
+      background: transparent;
       width: 33%;
+      border: solid brown;
+    }
+    .basic h1{
+      text-align: center;
+      background: transparent;
+      color: brown;
+      border: solid brown;
+      border-width: 1px;
+      margin: 0 auto;
+    }
+    .premium h1{
+      text-align: center;
+      background: transparent;
+      color: brown;
+      border: solid brown;
+      border-width: 1px;
+      margin: 0 auto;
+    }
+    .basic, .premium h2{
+      text-align: center;
+      color: brown;
     }
   </style>
   <body>
@@ -224,8 +246,8 @@
         <ul id="nav-link">
           <li><a href="#history">Home</a></li>
             <li><a href="#features">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-                <li><a href="#">About Us</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#video">About Us</a></li>
         </ul>
       </nav>
     </header>
@@ -289,8 +311,12 @@
       <h3>Pricing Details:</h3>
       <div id="pricing">
         <div class="basic">
+          <h1>Basic</h1>
+          <h2>$50/year</h2>
         </div>
         <div class="premium">
+          <h1>Premium</h1>
+          <h2>$100/year</h2>
         </div>
       </div>
   </body>
