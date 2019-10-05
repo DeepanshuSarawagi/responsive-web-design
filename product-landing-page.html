@@ -35,6 +35,7 @@
     }
     nav li{
       display: inline;
+      color: black;
       margin-right: 0px;
       padding-right: 5px;
     }
@@ -202,8 +203,8 @@
       position: relative;
       top: 20px;
       justify-content: space-around;
-      width: 100%;
-      height: 250px;
+      width: auto;
+      height: auto;
     }
     .basic, .premium{
       background: transparent;
@@ -230,6 +231,16 @@
       margin-left: 30%;
       font-size: 16px;
       border-radius: 5px;
+    }
+    #form{
+      position: relative;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #email{
+      width: 50%;
     }
   </style>
   <body>
@@ -327,5 +338,10 @@
         <button type="button" name="button">Select</button>
         </div>
       </div>
+      <form id="form" action="submit" method="GET">
+        <label for="email"><strong>Subscribe to our daily news letter:</strong></label>
+        <input id="email" type="email" name="email" placeholder="Enter your email address">
+        <button type="submit" name="button">Get Started</button>
+      </form>
   </body>
 </html>
