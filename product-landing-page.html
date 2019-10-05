@@ -39,18 +39,18 @@
     }
     #features{
       display: grid;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 3fr;
-      grid-gap: 2px;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 5fr;
       grid-template-areas: "advert content"
-                            "advert content";
-      align-items: start;
+                           "battery support";
+      align-items: center;
     }
     #truck{
       background: brown;
       width: 50px;
       display: grid;
       grid-area: advert;
+      align-self: center;
       height: 15px;
       margin-top: 40px;
       margin-left: 0px;
@@ -131,7 +131,59 @@
     #delivery{
       display: grid;
       grid-area: content;
-      align-self: start;
+      align-self: center;
+    }
+    #battery{
+      background: "transparent";
+      border: solid brown;
+      width: 90px;
+      height: 30px;
+      border-width: 6px;
+      display: grid;
+      grid-area: battery;
+      top: 170px;
+      display: block;
+    }
+    .battery-point{
+      background: transparent;
+      border: solid brown;
+      width: 6px;
+      height: 5px;
+      position: relative;
+      display: inline-block;
+      top: 8px;
+      left: 90px;
+    }
+    .battery-charge{
+      background: brown;
+      width: 0%;
+      height: 88%;
+      margin-left: 2px;
+      margin-top: -16px;
+      animation-name: charging;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes charging{
+      0%{
+        width: 25%;
+      }
+      25%{
+        width: 50%;
+      }
+      50%{
+        width: 75%;
+      }
+      75%{
+        width: 90%;
+      }
+      100%{
+        width: 94%;
+      }
+    }
+    #support{
+      display: grid;
+      grid-area: support;
     }
   </style>
   <body>
@@ -191,7 +243,14 @@
           <div class="truck-wheel2">
           </div>
           </div>
-          <p id="delivery">We promise quick delivery the goods at any given day around the clock.</p>
+          <p id="delivery">We promise quick delivery of the goods at any given day around the clock.</p>
+          <div id="battery">
+            <div class="battery-point">
+            </div>
+            <div class="battery-charge">
+            </div>
+          </div>
+          <p id="support">100% support and coverage across our locations.</p>
       </div>
   </body>
 </html>
