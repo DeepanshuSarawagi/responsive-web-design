@@ -203,6 +203,7 @@
       position: relative;
       top: 20px;
       justify-content: space-around;
+      flex-basis: 50%;
       width: auto;
       height: auto;
     }
@@ -244,7 +245,7 @@
       width: 200px;
       margin-top: 10px;
     }
-    #form button{
+    #submit{
       background: brown;
       color: white;
       font-size: 14px;
@@ -347,10 +348,10 @@
         <button type="button" name="button">Select</button>
         </div>
       </div>
-      <form id="form" action="submit" method="GET">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
         <label for="email"><strong>Subscribe to our daily news letter:</strong></label>
-        <input id="email" type="email" name="email" placeholder="Enter your email address">
-        <button type="submit" name="button">Get Started</button>
+        <input  id="email" type="email" name="email" placeholder="Enter your email address">
+        <input id="submit" type="submit" value="Get Started">
       </form>
   </body>
 </html>
