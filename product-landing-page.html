@@ -22,7 +22,7 @@
       left: -90px;
     }
     #nav-bar{
-      background: gray;
+      background: lightgray;
       position: fixed;
       text-align: right;
       top: 0px;
@@ -252,6 +252,25 @@
       margin-top: 10px;
       border-radius: 5px;
     }
+    @media (max-width: 600px){
+      #pricing{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    footer{
+      display: block;
+      background: lightgrey;
+      text-align: right;
+      width: 100%;
+      height: 10%;
+    }
+    footer li{
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
   </style>
   <body>
     <header id="header">
@@ -353,5 +372,12 @@
         <input  id="email" type="email" name="email" placeholder="Enter your email address">
         <input id="submit" type="submit" value="Get Started">
       </form>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Term</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
   </body>
 </html>
