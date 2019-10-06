@@ -5,9 +5,40 @@
     <meta charset="utf-8">
     <title>Technical Documentation Page</title>
   </head>
+  <style>
+    body{
+      line-height: 1.5em;
+    }
+    #nav-bar{
+      width: 300px;
+      height: 100%;
+      background: lightgrey;
+      border-right: solid;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+    }
+    nav li{
+      border-top: solid;
+      border-width: 1px;
+      list-style: none;
+      text-decoration: none;
+      text-align: left;
+      display: block;
+    }
+  </style>
   <body>
-    <main>
-
+    <nav id="nav-bar">
+      <header>HTML and CSS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section">
+        <header>HTML and CSS Introduction</header>
+      </section>
     </main>
   </body>
 </html>
