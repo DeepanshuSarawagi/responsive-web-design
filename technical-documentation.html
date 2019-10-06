@@ -49,6 +49,12 @@
       color: darkgreen;
       font-weight: 600;
     }
+    code{
+      display: block;
+      background: lightgrey;
+      max-width: 80%;
+      margin: 0 auto;
+    }
   </style>
   <body>
     <nav id="nav-bar">
@@ -56,6 +62,7 @@
       <ul>
         <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
         <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+        <li><a class="nav-link" href="#anchor_element">Anchor Tag</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -96,9 +103,35 @@
               <li>The <span>charset</span> attribure defines the character set used in the document</li>
               <li>The <span><</span><span>title</span><span>></span> element specifies a title for the document</li>
               <li>The <span><</span><span>body</span><span>></span> element contains the visible page content</li>
-              <li>The <span><</span><span>h1<span><span>></span> element defines a large heading</li>
+              <li>The <span><</span><span>h1</span><span>></span> element defines a large heading</li>
               <li>The <span><</span><span>p</span><span>></span> element defines a paragraph</li>
             </ul>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="anchor_element">
+        <header>Anchor Tag:</header>
+        <article>
+          <p>The <span><</span><span>a</span><span>></span> tag defines a hyperlink,
+            which is used to link from one page to another. The most important
+            attribute of the <span><</span><span>a</span><span>></span> element
+            is the href attribute, which indicates the link's destination.
+            <br>
+            <br>
+            By default, links will appear as follows in all browsers:
+            <ul>
+              <li>An unvisited link is underlined and blue</li>
+              <li>A visited link is underlined and purple</li>
+              <li>An active link is underlined and red</li>
+            </ul>
+            You can use the <span>target</span><span>=</span><span>"</span><span>_</span><span>blank</span><span>"</span>
+            inside the <span><</span><span>a</span><span>></span> tag to open the
+            desitnation link in new tab.
+            <code>
+              <span><</span><span>a</span> <span>href<span><span>=</span><span>"</span><span>https://www.google.com</span><span>"</span> <span>target</span><span>=</span><span>"</span><span>_</span><span>blank</span><span>"</span><span>></span>Google<span><</span>/a>
+
+            </code>
+            You can test by <a href="https://www.google.com" target="_blank">clicking here.</a>
           </p>
         </article>
       </section>
