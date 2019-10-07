@@ -138,7 +138,7 @@
         </article>
       </section>
       <section class="main-section" id="lists">
-        <header>Links:</header>
+        <header>Lists:</header>
         <article>
           <p>You can create two types of lists in HTML, Unordered lists and
           Ordered lists.</p>
@@ -236,7 +236,35 @@
             <br>
             <button type="submit" name="button">Submit</button>
           </form>
-          <p></p>
+          <p>We can also get input from user using input type Radio buttons. If you
+          have to group the radio buttons together for a single response, then name
+        attribute should be defined mandatorily. We can use the "chacked" attribute
+      to select the default value checked.</p>
+        <code>
+          <span><</span><span>label for</span><span>=</span><span>"</span><span>subscription</span><span>"</span><span>></span><span>Would you like to Subscribe to our news letters?<br>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> name</span><span>=</span><span>"</span><span>subscription</span><span>"</span>
+          <span>checked</span><span>></span><span>Yes</span><br>
+          <span>input</span><span> type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span> name</span><span>=</span><span>"</span><span>subscription</span><span>"</span>
+          <span>checked</span><span>></span><span>No</span>
+        </code>
+        <label for="subscription">Would you like to subscribe to our news letters?<br>
+        <input type="radio" name="subscription" checked> Yes</label>
+        <label for="subscription">
+        <input name="subscription" type="radio"> No</label>
+        <p>We can also get input from users using checkboxes. Checkboxes are the
+        best user input type if they have the liberty to select multiple options.</p>
+        <code>
+          <span><</span><span>label for</span><span>=</span><span>"</span><span>review</span><span>"</span><span>></span><span>What do you like about this page?</span><br>
+          <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>checkbox</span><span>"</span><span> name</span><span>=</span><span>"</span><span>review</span><span>"</span><span> checked</span><span>></span><span> Layout</span><br>
+          <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>checkbox</span><span>"</span><span> name</span><span>=</span><span>"</span><span>review</span><span>"</span><span>></span><span> Design</span><br>
+          <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>checkbox</span><span>"</span><span> name</span><span>=</span><span>"</span><span>review</span><span>"</span><span>></span><span> Content</span><br>
+        </code>
+        <form method="post">
+          <label for="review">What do you like the most about this page></label>
+          <input type="checkbox" name="review" value="review" checked> Layout <br>
+          <input type="checkbox" name="review" value="review" > Design <br>
+          <input type="checkbox" name="review" value="review" > Content <br>
+        </form>
         </article>
       </section>
     </main>
