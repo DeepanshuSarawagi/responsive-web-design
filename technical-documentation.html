@@ -64,6 +64,7 @@
         <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
         <li><a class="nav-link" href="#anchor_element">Anchor Tag</a></li>
         <li><a class="nav-link" href="#lists">Lists</a></li>
+        <li><a class="nav-link" href="#forms">Forms</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -177,6 +178,64 @@
             <li>Item 2</li>
             <li>Item 3</li>
           </ol>
+        </article>
+      </section>
+      <section class="main-section" id="forms">
+        <header>
+          Forms:
+        </header>
+        <article>
+          <p>The HTML <span><</span><span>form</span><span>></span> element defines a form that is used to collect user input. </p>
+          <code>
+            <span><</span><span>form</span><span>></span>
+            <br>
+            .
+            <br>
+            form Elements
+            <br>
+            .
+            <br>
+            <span><</span><span>/form</span><span>></span>
+          </code>
+          <p>There are several types of input to get the data from the user.</p>
+          <code>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span>
+            <br>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>radio</span><span>"</span><span>></span>
+            <br>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>submit</span><span>"</span><span>></span>
+            <br>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>checkbox</span><span>"</span><span>></span>
+          </code>
+          <p>Below example shows to get First Name and Last Name from user.</p>
+          <form action="Submit" method="post">
+            <label for="First_Name">First Name:</label>
+            <br>
+            <input type="text" name="First_Name" id="First_Name" placeholder="Enter your First Name">
+            <br>
+            <label for="Last_Name">Last Name:</label>
+            <br>
+            <input type="text" name="Last_Name" id="Last_Name" placeholder="Enter your Last Name">
+            <br>
+            <button type="submit" name="button">Submit</button>
+          </form>
+          <p>You can also set the input fields mandatory by using the "required" attribute in the input element</p>
+          <code>
+            <span><</span><span>input</span><span> type</span><span>=</span><span>"</span><span>text</span><span>"</span><span> required</span><span>></span>
+          </code>
+          <p>Please see the below example, when a user tries to click on submit button,
+          it asks for First Name and Last if nothing is entered.</p>
+          <form action="Submit" method="post">
+            <label for="First_Name">First Name:</label>
+            <br>
+            <input type="text" name="First_Name" id="First_Name" placeholder="Enter your First Name" required>
+            <br>
+            <label for="Last_Name">Last Name:</label>
+            <br>
+            <input type="text" name="Last_Name" id="Last_Name" placeholder="Enter your Last Name" required>
+            <br>
+            <button type="submit" name="button">Submit</button>
+          </form>
         </article>
       </section>
     </main>
