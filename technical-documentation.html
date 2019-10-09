@@ -55,6 +55,18 @@
       width: auto;
       margin: 0 auto;
     }
+    .red-text{
+      color: red;
+    }
+    .orange-text{
+      color: orange;
+    }
+    .cyan-text{
+      color: cyan !important;
+    }
+    .blue-text{
+      color: blue;
+    }
   </style>
   <body>
     <nav id="nav-bar">
@@ -68,6 +80,7 @@
         <li><a class="nav-link" href="#CSS">Introduction to CSS</a></li>
         <li><a class="nav-link" href="#css-syntax">CSS Syntax</a></li>
         <li><a class="nav-link" href="#css-selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#class-precedence">CSS Class Precendence</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -341,7 +354,56 @@
           CSS Class Precedence:
         </header>
         <article>
-          <p> </p>
+          <p> In this section we are going to learn about the CSS class precendence.</p>
+          let us create a heading h1 with CSS class as red-text.
+          <code>
+            <span><</span><span>style</span><span>></span><br>
+            <span>.red-text</span><span> {</span><br>
+              <span>color:</span><span> red;</span><br>
+              <span>}</span><br>
+              <span><</span><span>/style</span><span>></span><br>
+              <span><</span><span>h1</span><span> class=</span><span>"</span><span>red-text</span><spasn>"</span><span>></span><br>
+              <span>Hello World in Red</span><br>
+              <span><</span><span>/h1</span><span>></span><br>
+          </code>
+          Above code, will create an output like this.
+          <h1 class="red-text">Hello World in Red</h1>
+          <p>Now, lets create one more header h1 but we will define two two classes in it
+          to change the text-color to orange.</p>
+          <code>
+            <span><</span><span>style</span><span>></span><br>
+            <span>.red-text</span><span> {</span><br>
+              <span>color:</span><span> red;</span><br>
+              <span>}</span><br>
+              <span>.orange-text</span><span> {</span><br>
+                <span>color:</span><span> orange;</span><br>
+                <span>}</span><br>
+              <span><</span><span>/style</span><span>></span><br>
+              <span><</span><span>h1</span><span> class=</span><span>"</span><span>red-text</span><span> orange-text</span><span>"</span><span>></span><br>
+              <span>Hello World in Orange. I`m preceded over Red.</span><br>
+              <span><</span><span>/h1</span><span>></span><br>
+          </code>
+          <h1 class="red-text orange-text">Hello World in Orange. I`m preceded over Red.</h1>
+          <p>The above example illustrates clearly that class="orange-text" has taken precedence
+          over class="red-text" since it has been declared later.</p>
+          <p>To under in a better way class="class1 class2 class3", class3 will take
+          precedence over class2 which in turn will take precedence over class1.</p>
+          <p>we can override the class precendence by using the override keyword when defining
+          the classes. Please see the below code for example.</p>
+          <code>
+            <span><</span><span>style</span><span>></span><br>
+            <span>.cyan-text</span><span> {</span><br>
+              <span>color:</span><span> cyan</span><span> !important</span><span>;</span><br>
+              <span>}</span><br>
+              <span>.blue-text</span><span> {</span><br>
+                <span>color:</span><span> blue;</span><br>
+                <span>}</span><br>
+              <span><</span><span>/style</span><span>></span><br>
+              <span><</span><span>h2</span><span> class=</span><span>"</span><span>cyan-text</span><span> blue-text</span><span>"</span><span>></span><br>
+              <span>Hello World in blue. I`ll still be cyan.</span><br>
+              <span><</span><span>/h2</span><span>></span><br>
+          </code>
+          <h2 class="cyan-text blue-text">Hello World in blue. I`ll still be cyan.</h2>
         </article>
       </section>
     </main>
