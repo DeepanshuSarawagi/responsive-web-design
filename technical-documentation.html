@@ -65,6 +65,9 @@
         <li><a class="nav-link" href="#anchor_element">Anchor Tag</a></li>
         <li><a class="nav-link" href="#lists">Lists</a></li>
         <li><a class="nav-link" href="#forms">Forms</a></li>
+        <li><a class="nav-link" href="#CSS">Introduction to CSS</a></li>
+        <li><a class="nav-link" href="#css-syntax">CSS Syntax</a></li>
+        <li><a class="nav-link" href="#css-selectors">CSS Selectors</a></li>
       </ul>
     </nav>
     <main id="main-doc">
@@ -265,6 +268,80 @@
           <input type="checkbox" name="review" value="review" > Design <br>
           <input type="checkbox" name="review" value="review" > Content <br>
         </form>
+        </article>
+      </section>
+      <br>
+      <section class="main-section" id="CSS">
+        <header>
+          What is CSS?
+        </header>
+        <article>
+          <p>
+          CSS stands for Cascading Style Sheets. It describes how HTML page should ba
+        displayed on the browser. CSS is used to define styles for your web pages,
+        including the design, layout and variations in display for different devices
+        and screen sizes.
+      </p>
+      <p>HTML was never introduced to contain tags for formatting a web page.
+      HTML was created to describe the content of the page. When tags like
+      <span><</span><span>font</span><span>></span>, and color attributes were
+      added to the HTML 3.2 specification, it started a nightmare for web developers.
+      Development of large websites, where fonts and color information were added
+      to every single page, became a long and expensive process. To solve this problem,
+      the World Wide Web Consortium (W3C) created CSS. </p>
+        </article>
+      </section>
+      <section class="main-section" id="css-syntax">
+        <header>
+          CSS Syntax:
+        </header>
+        <article>
+          <p>A CSS rule-set consists of a selector and a declaration block:</p>
+          <code>
+            <span>h1</span> <span>{</span><span>color:</span><span> blue;</span><br>
+              <span>font-size:</span><span> 12px;</span><br>
+              <span>}</span>
+          </code>
+          In the above code, h1 is the CSS selector, and the declaration in the curly
+          braces are CSS property and its corresponding property.
+          <br>
+          In this example, all the <span><</span><span>p</span><span>></span> elements
+          will be center-aligned with a red text color.
+          <code>
+            <span>p</span><span> {</span><span> color:</span><span> red;</span><br>
+              <span>text-align:</span><span> center;</span><br>
+              <span>}</span>
+          </code>
+          Always remember that the CSS declarations opens and closes with a curly braces and
+          the property and the corresonding values defined ends with a semi-colon.
+        </article>
+        <br>
+      </section>
+      <section class="main-section" id="css-selectors">
+        <header>
+          CSS Selectors:
+        </header>
+        <article>
+          <p>
+            CSS selectors are used to "find" (or select) the HTML elements you
+            want to style. We can divide CSS selectors into five categories:
+            <ul>
+              <li><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Simple Selectors</a></li>
+              <li><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinator Selectors</a></li>
+              <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Psuedo-Class Selectors</a></li>
+              <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Psuedo-elements Selectors</a></li>
+              <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Attribute Selectors</a></li>
+            </ul>
+          </p>
+          <p>Click on each hyper-links to learn more about CSS selectors.</p>
+        </article>
+      </section>
+      <section class="main-section" id="class-precedence">
+        <header>
+          CSS Class Precedence:
+        </header>
+        <article>
+          <p> </p>
         </article>
       </section>
     </main>
