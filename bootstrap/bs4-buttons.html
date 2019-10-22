@@ -59,6 +59,24 @@
       <button type="button" name="button" class="btn btn-primary">Samsung</button>
       <button type="button" name="button" class="btn btn-primary">One+</button>
     </div>
+    <h2>Dropdown menus in button</h2>
+    <p>We can create dropdown menus in button by using the class .dropdown-toggle and
+    <code><span>data-toggle=</span><span>"</span><span>dropdown</span><span>"</span></code>
+    We also need to create a separate div element with class dropdown-menu and insert
+    anchor tags with class dropdown-item
+  </p>
+  <div class="btn-group">
+    <button type="button" name="button" class="btn btn-primary">Apple</button>
+    <button type="button" name="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" name="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://www.sonymobile.com/global-en/products/tablets/xperia-z4-tablet/#gref" target="_blank">Tablet</a>
+        <a href="https://www.sonymobile.com/global-en/products/phones/#gref" class="dropdown-item">Smartphone</a>
+        <a href="https://www.sony.co.in/electronics/tv/t/televisions" class="dropdown-item">TV</a>
+      </div>
+    </div>
+  </div>
       </div>
   </body>
 </html>
