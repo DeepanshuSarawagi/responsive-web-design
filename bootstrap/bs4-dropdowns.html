@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Dropdowns</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic dropwdown in Bootstrap4</h2>
+      <p>We can create basic basic dropdown by using .dropdown class in
+        <code><span><</span><span>div</span><span>></span></code> element. To open
+        the dropdown menu we need to use the class .dropdown-toggle and <code>
+          <span>data-toggle=</span><span>"</span><span>dropwdown</span><span>"</span></code>
+          in <code><span><</span><span>button</span><span>></span></code> or
+          <code><span><</span><span>a</span><span>></span></code> element.
+      </p>
+      <div class="dropdown">
+        <button type="button" name="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Mobile Phones</button>
+        <div class="dropdown-menu">
+          <a href="https://www.apple.com/in/iphone/" class="dropdown-item" target="_blank">Apple</a>
+          <a href="https://www.samsung.com/in/mobile/" class="dropdown-item" target="_blank">Samsung</a>
+          <a href="https://www.sonymobile.com/in/#gref" class="dropdown-item" target="_blank">Sony</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
