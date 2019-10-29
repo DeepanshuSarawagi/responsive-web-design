@@ -51,6 +51,35 @@
           <div class="collapse show" id="example2">
             <p>As learned above, I`m shown by defualt. You click on the button to hide me.</p>
         </div>
+        <h3>Accordion</h3>
+        <p>Accordions are collpasible items grouped together. We need to use the <code><span>data-parent="</span><span>accordion</span><span>"</span></code>
+          attribute in the <code><span><</span><span>div</span><span>></span></code> element to make sure that all collapsible elements under 
+          the specified parent will be closed when one of the collapsible item is shown.
+          </p>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a href="#collapseOne" class="card-link" data-toggle="collapse">Collapsible Item #1 </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a href="#collapseTwo" class="card-link" data-toggle="collapse">Collapsible Item #2</a>
+              </div>
+              <div id="collapeTwo" class="collapse" data-parent="accordian">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+        </div>
   </div>
   </body>
   </html>
