@@ -231,6 +231,36 @@ element with class .tab-content. You can add the class active or fade in tab pan
       </div>
     </div>
   </ul>
+  <h2>Toggleable Pills</h2>
+  <p>
+    To make the navigation pills toggleable, we need to add the attribute
+    <code><span>data-toggle="</span><span>tab</span><span>"</span></code> in the each
+    link. The create a class .tab-pane and wrap it inside <code><span><</span><span>div</span><span>></span></code>
+    element with unique ID. Create multiple tab panes inside <code><span><</span><span>a</span><span>></span></code>
+    element with class .tab-content. You can add the class active or fade in tab panes.
+  </p>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a href="#homePill" class="nav-link active" data-toggle="pill">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#Pill1" class="nav-link" data-toggle="pill">Pill1</a>
+    </li>
+    <li class="nav-item">
+      <a href="#Pill2" class="nav-link" data-toggle="pill">Pill2</a>
+    </li>
+    <div class="tab-content">
+      <div class="tab-pane container active" id="homePill">
+        We have created a toggleable pill for home screen.
+      </div>
+      <div class="tab-pane container fade" id="Pill1">
+        We have created a toggleable pill for screen1.
+      </div>
+      <div class="tab-pane container fade" id="Pill2">
+        We have created a toggleable pill for screen2.
+      </div>
+    </div>
+  </ul>
     </div>
   </body>
 </html>
