@@ -227,6 +227,44 @@
             </li>
           </ul>
       </nav>
+      <h3>Collapsing the Navigation Bar</h3>
+      <p>Collapsing the navigation bar can be done by using the class <code>
+        <span>class="</span><span>navbar-toggler</span><span>"</span>
+        </code>
+        and 
+        <code>
+        <span>data-toggle="</span><span>collapse</span><span>"</span> and
+          <span>data-target="</span><span>#thetarget</span><span>"</span>
+        </code>
+        in the button element. The wrap the navbar contents (links, etc) in the <code>
+        <span><</span><span>div</span><span>></span> element by adding the class 
+          <code>
+        <span>class="</span><span>collapse navbar-collapse</span><span>"</span>
+            and <span>id="</span><span>thetarget</span><span>"</span>
+        </code>
+        </code>
+      </p>
+        <nav class="navbar bg-info navbar-dark">
+         <a class="navbar-brand" href="https://github.com/" target="_blank">
+          <img src="https://icon-library.net/images/github-icon-white/github-icon-white-25.jpg" alt="logo" style="width:40px;">
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleBar">
+            <span class="navbar-toggler-icon"></span>
+            </button
+            <div class="collapse navbar-collapse" id="collapsibleBar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link3</a>
+            </li>
+            </ul>
+            </div>
+      </nav>
     </div>
   </body>
 </html>
