@@ -310,6 +310,31 @@
             <button type="submit" name="button" class="btn btn-success">Search</button>
           </form>
         </nav>
+        <p>We can also use other input classes such .input-group-prepend or
+        .input-group-append to create an icon next to the input field.</p>
+        <nav class="navbar navbar-expand bg-dark navbar-dark">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" name="Username" placeholder="Username">
+          </div>
+        </nav>
+        <p>Here is the syntax on how to create an input group.
+          <code>
+            <span><</span><span>div</span><span> class="</span><span>input-group</span><span>"</span><span>></span>
+            <br>
+            <span>&nbsp;</span><span><</span><span>div</span><span> class="</span><span>input-group-prepend</span><span>"</span><span>></span>
+            <br>
+            <span>&nbsp;</span><span><</span><span>span class="</span><span>input-group-text</span><span>"</span><span>></span><span>@</span><span><</span><span>/span</span><span>></span>
+            <br>
+            <span>&nbsp;</span><span><</span><span>/div</span><span>></span>
+            <br>
+            <span><</span><span>input</span><span> type="</span><span>text</span><span>"</span><span> placeholder="</span><span>someplaceholder</span><span>"</span><span>></span>
+            <br>
+            <span><</span><span>/div</span><span>></span>
+          </code>
+        </p>
       </div>
   </body>
 </html>
