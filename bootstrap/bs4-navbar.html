@@ -266,7 +266,7 @@
             </ul>
             </div>
       </nav>
-      <div class="container">
+      <div class="container-fluid">
         <h3>Navbar with dropdowns</h3>
         <p>We can also create navigation bars with dropdown menu.</p>
         <nav class="navbar navbar-expand-sm bg-success navbar-dark">
@@ -294,6 +294,21 @@
              </div>
            </li>
          </ul>
+        </nav>
+        <h3>Forms and Buttons in Navigation Bar</h3>
+        <p>To create Forms in Navigation Bar we need to add a <code><span><</span><span>form</span><span>></span></code>
+          element wrapped inside <code><span><</span><span>nav</span><span>></span></code> bar.
+          The form element should contain class .form-inline and with an action attribute.
+          Then create an <code><span><</span><span>input</span><span>></span></code> element with class
+          .form-control and mr-sm-2 and <code>
+            <span>type="</span><span>text</span><span>"</span>
+          </code> and give a placeholder. Also wrap a button element inside form.
+        </p>
+        <nav class="navbar bg-expand-sm bg-dark navbar-dark">
+          <form class="form-inline" action="index.html" method="post">
+            <input type="text" name="Input" class="form-control mr-sm-2" placeholder="Search">
+            <button type="submit" name="button" class="btn btn-success">Search</button>
+          </form>
         </nav>
       </div>
   </body>
