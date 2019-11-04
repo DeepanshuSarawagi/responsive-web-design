@@ -87,6 +87,25 @@
         </div>
         <input type="text" name="radio" placeholder="Some text" class="form-control">
       </div>
+      <h3>Input Group Buttons</h3>
+      <p>We can create input group buttons by wrappeing the <code>
+        <span><</span><span>button</span><span>></span>
+      </code> element inside the <code>
+        <span><</span><span>div</span><span>></span>
+      </code> with class .input-group-prepend </p>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button type="button" name="button" class="btn btn-primary">Basic Button</button>
+        </div>
+        <input type="text" name="basic" placeholder="Search" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" name="search" placeholder="Go" class="form-control">
+        <div class="input-group-append">
+          <button type="button" name="button" class="btn btn-success">Go</button>
+          <button type="button" name="button" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
