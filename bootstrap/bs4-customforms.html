@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Custom Forms in Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bootstrap 4 Custom Forms</h3>
+      <p>Bootstrap 4 comes with custom forms which are meant to replace browser default form elements.</p>
+      <h4>Custom Checkbox</h4>
+      <p>To create a custom checkbox wrap a container element like <code>
+        <span><</span><span>div</span><span>></span>
+      </code> with the class .custom-control and .custom-checkbox. Then in the
+      <code>
+        <span><</span><span>input</span><span>></span>
+      </code> element, use the class .custom-control-input.
+      <strong>Note:</strong> If you are using a label associated with the checkbox
+      the id attribute in input element should match with for attribute in the
+      <code>
+        <span><</span><span>label</span><span>></span>
+      </code> element.
+    </p>
+    <form>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheckbox">
+        <label class="custom-control-label" for="customCheckbox">An example for custom checkbox</label>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
