@@ -42,6 +42,22 @@
       <input type="checkbox" name="switch" class="custom-control-input" id="switch1">
       <label for="switch1" class="custom-control-label">Toggle me</label>
     </div>
+    <h4>Custom Radio Buttons</h4>
+    <p>To create custom radio buttons, add following classes like .custom-control and
+    .custom-radio in the wrapper container like <code>
+      <span><</span><span>div</span><span>></span>
+    </code>.
+    Then use the class .custom-control-input in the input element.
+    <br>
+    <strong>Note:</strong> If we are using the labels then the id attribute in the
+    input element should match with the for attribute in the label element.
+  </p>
+  <div class="input-group">
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" name="radio" id="radio1">
+      <label for="radio1" class="custom-control-label">I am a custom radio button.</label>
+    </div>
+  </div>
     </div>
   </body>
 </html>
