@@ -26,11 +26,20 @@
         Hey You!
       </button>
       <a href="#" data-toggle="tooltip" title="Whats Up?" data-placement="right">Hello!</a>
-      <script>
-        $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-        });
-      </script>
+      <h4>Positioning Tooltip</h4>
+      <p>We can position the tooltip by using the attribute <code>
+        <span>data-placement="</span><span>top/botton/right/left"</span>
+      </code> in the element.</p>
+      <br>
+      <a href="#" data-toggle="tooltip" data-placement="top" title="Top!">Hey! I`m</a>
+      <a href="#" data-toggle="tooltip" data-placement="bottom" title="Bottom!">Hey! I`m</a>
+      <a href="#" data-toggle="tooltip" data-placement="right" title="Right!">Hey! I`m</a>
+      <a href="#" data-toggle="tooltip" data-placement="left" title="Left!">Hey! I`m</a>
     </div>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
