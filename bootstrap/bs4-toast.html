@@ -25,13 +25,37 @@
           Some text inside the toast body
         </div>
       </div>
-      <script>
-        $(document).ready(function(){
-          $("#myBtn").click(function(){
-            $('.toast').toast('show');
-          });
-        });
-      </script>
+      <h3>Show and Hide Toast</h3>
+      <p>By default Toast is hidden and we can use the attribute
+        <code>
+          <span>data-autohide="</span><span>false"</span>
+        </code> to show to toast. We need to use the button to close/dismiss the toast.
+      </p>
+      <button type="button" name="button" class="btn btn-primary" id="myBtn1">Click Me</button>
+      <div class="toast" data-autohide="false">
+        <div class="toast-header">
+          <h6 class="text-primary mr-auto">Toast Header</h6>
+          <small class="text-muted">5 mins ago</small>
+          <button type="button" name="button" class="close ml-1 mb-2" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+          Some text in the body
+        </div>
+      </div>
     </div>
+    <script>
+      $(document).ready(function(){
+        $("#myBtn").click(function(){
+          $('.toast').toast('show');
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#myBtn1").click(function(){
+          $('.toast').toast('show');
+        });
+      });
+    </script>
   </body>
 </html>
