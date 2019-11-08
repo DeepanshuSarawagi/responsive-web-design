@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Bootsrap 4 Toast </title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bootstrap 4 Toast</h3>
+      <p>The toast component is an alert box that is only shown for a couple of
+      seconds when a user clicks on a button, form etc.
+      <strong>Note:</strong>Toast component has to be initialised using jquery.
+    </p>
+      <button type="button" name="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+      <div class="toast">
+        <div class="toast-header">
+          <h6>Toast Header</h6>
+        </div>
+        <div class="toast-body">
+          Some text inside the toast body
+        </div>
+      </div>
+      <script>
+        $(document).ready(function(){
+          $("#myBtn").click(function(){
+            $('.toast').toast('show');
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
