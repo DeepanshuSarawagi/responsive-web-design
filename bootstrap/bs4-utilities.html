@@ -78,6 +78,7 @@
       We can center align the elements by using the class .mx-auto.
     </p>
     <div class="mx-auto bg-success" style="width:125px;">I`m centered</div>
+<<<<<<< HEAD
     <h3>Width</h3>
     <p>Set the width of the element by using w-* classes. For e.g., w-25 will create a
     width of 25%, w-50, w-75, w-100 will create width of element 50%, 75% and 100%
@@ -94,5 +95,119 @@
     <div class="h-75 d-inline-block p-2 bg-success">I`m 75%</div>
     <div class="h-100 d-inline-block p-2 bg-success">I`m 100%</div>
   </div>
+=======
+    <h3>Spacing</h3>
+    <p>Bootstrap 4 spacing has wide range of responsive margin and padding utility classes. They work for all the breakpoints
+    xs (<=576 px), sm (>=576 px), md (>=768 px), lg (>=992 px) and xl (>=1200 px). The classes are used in the below format:
+      <code>
+        <span>{property}{sides}-{size}</span>
+      </code> for xs and 
+      <code>
+        <span>{property}{sides}-{breakpoint}-{sizes}</span>
+      </code> for sm|md|lg|xl.
+      Where property is one of:
+      <ul>
+        <li>m - sets margin</li>
+        <li>p - sets padding</li>
+      </ul>
+      where sides is one of:
+      <ul>
+        <li> t - sets margin-top or padding-top </li>
+        <li> b - sets margin-bottom or padding-bottom </li>
+        <li> l - sets margin-left or padding-left </li>
+        <li> r - sets margin-right or padding-right </li>
+        <li> x - sets both padding-left and padding-right or margin-left and margin-right </li>
+        <li> y - sets both padding-top and padding-bottom or margin-top and margin-bottom </li>
+      </ul>
+      <br>
+      where size is one of:
+      <ul>
+        <li> 0 - sets margin or padding to 0 </li>
+        <li> 1 - sets margin or padding to .25rem (4px if font-size is 16px) </li>
+        <li> 2 - sets margin or padding to .5rem (8px if font-size is 16px) </li>
+        <li> 3 - sets margin or padding to 1rem (16px if font-size is 16px) </li>
+        <li> 4 - sets margin or padding to 1.5rem (24px if font-size is 16px) </li>
+        <li> 5 - sets margin or padding to 3rem (48px if font-size is 16px) </li>
+        <li> auto - sets margin to auto </li>
+      </ul>
+      <strong>Note: </strong> margins can also be negative by adding an "n" in front of size.
+      <br>
+      <ul>
+        <li> n1 - sets margin or padding to -.25rem (-4px if font-size is 16px) </li>
+        <li> n2 - sets margin or padding to -.5rem (-8px if font-size is 16px) </li>
+        <li> n3 - sets margin or padding to -1rem (-16px if font-size is 16px) </li>
+        <li> n4 - sets margin or padding to -1.5rem (-24px if font-size is 16px) </li>
+        <li> n5 - sets margin or padding to -3rem (-48px if font-size is 16px) </li>
+      </ul>
+      </p>
+      <div class="container">
+        <h3>Spacing Utilities</h3>
+        <p>Examples using the spacing utilities.</p>
+        <div class="p-2 bg-warning"> I`m created with padding of 8 px on all the sides.</div>
+        <div class="pt-2 m-3 bg-success"> I`m created with padding of 8 px on top and margin of 16 px on all the sides.</div>
+        <div class="p-2 mb-3 bg-info"> I`m created with padding of 8 px on all the sides and margin of 16 px on bottom.</div>
+    </div>
+    <h3>Shadows</h3>
+    <p>
+    We can use the shadown class .shadow-* to add shadow to an element.
+    </p>
+    <div class="shadow-none bg-info mt-2">I have no shadow.</div>
+    <div class="shadow-sm bg-info m-2 p-2">I have small shadow.</div>
+    <div class="shadow bg-success m-2 p-2">I have default shadow.</div>
+    <div class="shadow-lg bg-warning m-2 p-2">I have large shadow.</div>
+    <h3>Vertical Align</h3>
+    <p>We can vertical align the elements by using the class .align-*. It works only for following displays:
+      <ul>
+        <li>inline</li>
+        <li>inline-block</li>
+        <li>inline-table</li>
+        <li>table cell elements</li>
+    </ul>
+    <span class="align-baseline">Align baseline</span>
+    <span class="align-top">Align top</span>
+    <span class="align-middle">Align middle</span>
+    <span class="align-bottom">Align bottom</span>
+    <span class="align-text-top">Align text top</span>
+    <span class="align-text-bottom">Align text bottom</span>
+    <h3>Responsive Embeds</h3>
+    <p>We can create responsive embeds by adding the class .embed-responsive-item to any embed elements like iframe or video.
+    We then need to wrap this embed item with an element with class .embed-responsive and .embed-responsive-*; where * detnotes the 
+    aspect ratio. </p>
+    <div class="container mt-3">
+    <div class="embed-responsive embed-responsive-1by1">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mU6anWqZJcc"></iframe>
+    </div>
+      <br>
+    <h5>Aspect ratio 4by3</h5>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mU6anWqZJcc"></iframe>
+    </div>
+      <br>
+    <h5>Aspect ratio 16by9</h5>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mU6anWqZJcc"></iframe>
+    </div>
+      <br>
+    <h5>Aspect ratio 21by9</h5>
+    <div class="embed-responsive embed-responsive-21by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mU6anWqZJcc"></iframe>
+    </div>
+      <br>
+    </div>
+    <h3>Visibility</h3>
+    <p>We can make the elements visible by adding the class .visible or .invisible.</p>
+    <span class="visible bg-info">I`m visible</span>
+    <span class="invisible bg-warning">I`m invisible</span>
+    <h3>Close button</h3>
+    <p>We can use the 
+      <br>
+      <code>
+        <span>class="</span><span>close</span><span>"</span>
+      </code>
+    <br>
+      in button element to create a close button. By default this button is aligned on the right side.
+    </p>
+    <button class="close" type="button">&times;</button>
+>>>>>>> cdba3de278c1aa81fae29cee7a31aa1216d25de1
   </div>
   </body>
