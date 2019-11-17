@@ -493,6 +493,204 @@
   <div class="m-2 p-2 border align-self-stretch">Flex Item 1</div>
   <div class="m-2 p-2 border">Flex Item 1</div>
 </div>
+<h3>Responsive Flex Classes</h3>
+<p>All flex classes comes with additional responsive classes, which makes it easy
+to set a specific class on a specific screen size. * symbol can be replaced with
+sm|md|lg|xl which represents small, medium, large and extra large screens. </p>
+<table class="table table-striped ">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Flex Container</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="width:50%;"> <code><span>.d-*-flex</span></code> </td>
+      <td style="width:100%;">Creates a flexbox container for different screen sizes. </td>
+    </tr>
+    <tr>
+      <td> <code><span>.d-*-inline-flex</span></code> </td>
+      <td>Creates a inline flex container for different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Flex Direction</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td> <code>.flex-*-row</code> </td>
+      <td>Displays flex items horizontally on different screens</td>
+    </tr>
+    <tr>
+      <td> <code>.flex-*-row-reverse</code> </td>
+      <td>Displays flex items horizontally and right aligned on different screens.</td>
+    </tr>
+    <tr>
+      <td> <code>.flex-*-column</code> </td>
+      <td>Displays flex items vertically on different screens</td>
+    </tr>
+    <tr>
+      <td> <code>.flex-*-column-reverse</code> </td>
+      <td>Displays flex items vertically and right aligned on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Justified Content</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td> <code>.justify-content-*-start</code> </td>
+      <td>Displays flex items from the start (left aligned) on different screen sizes. </td>
+    </tr>
+    <tr>
+      <td> <code>.justify-content-*-end</code> </td>
+      <td>Displays flex items at the end (right aligned) on different screen sizes. </td>
+    </tr>
+    <tr>
+      <td> <code>.justify-content-*-center</code> </td>
+      <td>Displays flex items at the center of the flex Container on different screen sizes. </td>
+    </tr>
+    <tr>
+      <td> <code>.justify-content-*-between</code> </td>
+      <td>Displays flex items in between of the flex Container on different screen sizes. </td>
+    </tr>
+    <tr>
+      <td> <code>.justify-content-*-around</code> </td>
+      <td>Displays flex items around the flex Container on different screen sizes. </td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Fill/Equal Width</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td> <code>.flex-*-fill</code> </td>
+      <td>Force flex items into equal widths on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Flex Grow</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-grow-0</code></td>
+      <td>Don`t make the items grow on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-grow-1</code></td>
+      <td>Makes the flex items grow on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Flex Shrink</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-shrink-0</code></td>
+      <td>Don`t make the flex items shrink on different screen sizes. </td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-shrink-1</code></td>
+      <td>Make the flex items shrink on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Order</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.order-*-0-12<code></td>
+        <td>Change the order of flex items on small screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Flex Wrap</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-nowrap</code></td>
+      <td>Dont wrap items on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-wrap</code></td>
+      <td>Wrap flex items on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.flex-*-wrap-reverse</code></td>
+      <td>Reverse the wrapping of flex items on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Align Content</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.align-content-*-start</code></td>
+      <td>Align the gathered items from the start of different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-content-*-end</code></td>
+      <td>Align the gathered items from the end of different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-content-*-center</code></td>
+      <td>Align the gathered items from the center of different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-content-*-around</code></td>
+      <td>Align the gathered items around the container on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-content-*-stretch</code></td>
+      <td>Stretch the gathered items on different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Align Items</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.align-items-*-start</code></td>
+      <td>Align single rows of items from the start on the different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-items-*-end</code></td>
+      <td>Align single rows of items from the end on the different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-items-*-center</code></td>
+      <td>Align single rows of items from the center on the different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-items-*-baseline</code></td>
+      <td>Align single rows of items from the baseline on the different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-items-*-stretch</code></td>
+      <td>Stretch single rows of items on the different screens.</td>
+    </tr>
+    <tr class="bg-dark text-light">
+      <td style="font-size:20px;">Align Self</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>.align-self-*-start</code></td>
+      <td>Align a flex item from the start on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-self-*-end</code></td>
+      <td>Align a flex item from the end on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-self-*-center</code></td>
+      <td>Align a flex item from the center on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-self-*-baseline</code></td>
+      <td>Align a flex item from baseline on different screens.</td>
+    </tr>
+    <tr>
+      <td><code>.align-self-*-stretch</code></td>
+      <td>Stretch a flex item on different screens.</td>
+    </tr>
+  </tbody>
+</table>
     </div>
   </body>
 </html>
