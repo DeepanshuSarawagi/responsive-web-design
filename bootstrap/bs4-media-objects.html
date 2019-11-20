@@ -22,8 +22,8 @@
     <p>To create a media object add a <code><span>.media</span></code> class to the
     container element and place the media content inside a child element with
   class <code><span>.media-body</span></code>.
-  </p>
-  <div class="media border p-3">
+    </p>
+    <div class="media border p-3">
     <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="twitter pic" class="mt-2 mr-2 rounded-circle" style="width:70px;height:70px;">
     <div class="media-body">
       <h5>Deepanshu Sarawagi <small><i>Posted on December 21, 2017</i></small></h5>
@@ -31,9 +31,29 @@
         What’s the most wondrous thing on Earth? Each day countless human enter
         temple of death, yet the ones left behind continue to live as immortals.
       </p>
-
-    </div>
-  </div>
+      </div>
+      </div>
+      <h3>Nested Media Objects</h3>
+      <p>To create nested media objects, nest a container with class <code><span>.media</span></code>
+        inside <code><span>.media-body.</span></code></p>
+        <div class="media border p-3">
+          <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Deepanshu Sarawagi" class="ml-1 rounded-circle" style="width:70px;">
+          <div class="media-body">
+            <h5 class="ml-2">Deepanshu Sarawagi <small><i>Posted on July 31, 2018</i></small></h5>
+            <p class="ml-2">I’ve finally deleted my #Facebook profile. Seems like the best
+              decision of 2018 so far. No more hate comments, speeches, manipulation
+              of data, violation of Intellectual Property, and above all, advertisements.
+            </p>
+            <div class="media">
+              <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Deepanshu Sarawagi" class="ml-2 rounded-circle" style="width:70px;">
+              <div class="media-body">
+                <h5 class="ml-2">Deepanshu Sarawagi <small><i>Posted on September 13, 2018</i></small></h5>
+                <p class="ml-2">Apple never fails to amuse Indians for the second consecutive year. 
+                  Making iPhone X, iPhone XS and iPhone XSMax unaffordable again. </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>
