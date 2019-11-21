@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eb3ebf07e.js" crossorigin="anonymous"></script>
+    <title>Filters in Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bootstrap 4 Filters</h3>
+      <p>Bootstrap 4 does not have a component which allows you to filter. However,
+      we can use JQuery to use filter options.</p>
+      <h3>Filterable Table</h3>
+      <p>Type anything in the search bar to filter the values in the table below.</p>
+        <input class="form-control" id="myInput" type="text" name="search" placeholder="search..">
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Deepanshu</td>
+              <td>Sarawagi</td>
+              <td>exampleemail1@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Divya</td>
+              <td>Sarawagi</td>
+              <td>exampleemail2@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Rajat</td>
+              <td>Sarawagi</td>
+              <td>exmapleemail3@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function(){
+              var value = $(this).val().toLowerCase();
+              $("#myTable tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+        </script>
+    </div>
+  </body>
+</html>
