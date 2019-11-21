@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eb3ebf07e.js" crossorigin="anonymous"></script>
+    <title>Bootstrap 4 Grid System</title>
+    <style>
+      .table-responsive{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+      }
+      table.grid{
+        width: 100%;
+        border: none;
+        background-color: #f1f1f1;
+        padding: 0px;
+      }
+      table.grid tr{
+        text-align: center;
+      }
+      table.grid td{
+        border: 4px solid white;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bootstrap 4 Grid System</h3>
+      <p>Bootstrap 4 grid system allows upto 12 columns across the page.
+      If you do not want to use all 12 columns individually, you can group the
+      columns together like this.</p>
+      <div class="table-responsive">
+        <table class="grid" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+              <td>span 1</td>
+            </tr>
+            <tr>
+              <td colspan="4">span 4</td>
+              <td colspan="4">span 4</td>
+              <td colspan="4">span 4</td>
+            </tr>
+            <tr>
+              <td colspan="4">&nbsp;span 4</td>
+              <td colspan="8">&nbsp;span 8</td>
+            </tr>
+            <tr>
+              <td colspan="6">span 6</td>
+              <td colspan="6">span 6</td>
+            </tr>
+            <tr>
+              <td colspan="12">span 12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
