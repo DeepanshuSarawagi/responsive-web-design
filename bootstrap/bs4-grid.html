@@ -84,7 +84,27 @@
         <li><code><span>.col-xl-</span></code> for extra large devices.</li>
       </ul>
       <p>The classes above can be used to create more dynamic and flexible layouts.</p>
-
+      <h3>Basic Grid Structure</h3>
+      <p>Following is a basic strucure of bootstrap 4:</p>
+      <!--We can create a basic grid structure like this one based on the screen
+      size-->
+      <div class="row">
+        <div class="col-sm-6" style="background-color:yellow;">50%</div>
+        <div class="col-sm-6" style="background-color:orange;">50%</div>
+      </div>
+      <br>
+      <!-- Or we can let bootstrap decide based on the screen size-->
+      <div class="row">
+        <div class="col" style="background-color:lightblue;">
+          50%
+        </div>
+        <div class="col" style="background-color:red;">
+          50%
+        </div>
+      </div>
+      <br>
+      <p>You can see the difference between the two layouts on two different screens.</p>
+      
     </div>
   </body>
 </html>
