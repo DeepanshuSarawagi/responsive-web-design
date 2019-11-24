@@ -156,6 +156,58 @@
         </div>
       </div>
     </div>
+    <h3>Bootstrap 4 Extra Small</h3>
+    <p>Assume we have two simple columns and we can it to split into 25% and 75%
+    split, we will create a grid structure with following classes:
+    <br>
+    <i><code>
+      <span>.col-sm-3</span>
+      <br>
+      <span>.col-sm-9</span>
+    </code></i>
+    <table class="table table-bordered table-striped table-responsive">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="bg-secondary">Extra Small</th>
+          <th>Small</th>
+          <th>Medium</th>
+          <th>Large</th>
+          <th>Extra Large</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Class</td>
+          <td class="bg-secondary">.col-</td>
+          <td>.col-sm-</td>
+          <td>.col-md-</td>
+          <td>.col-lg-</td>
+          <td>.col-xl-</td>
+        </tr>
+        <tr>
+          <td>Screen Width</td>
+          <td class="bg-secondary"><576px</td>
+          <td>>=576px</td>
+          <td>>=768px</td>
+          <td>>=992px</td>
+          <td>>=1200px</td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    <p>Following example creates a simple grid layout with 25% and 75% width.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 bg-secondary">
+          25%
+        </div>
+        <div class="col-9 bg-info">
+          75%
+        </div>
+      </div>
+    </div>
+    
     </div>
   </body>
 </html>
