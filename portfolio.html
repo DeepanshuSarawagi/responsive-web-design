@@ -16,11 +16,49 @@
     <script src="https://kit.fontawesome.com/1eb3ebf07e.js" crossorigin="anonymous"></script>
     <title>Personal Portfolio</title>
     <style media="screen">
+      html{
+        scroll-behavior: smooth;
+      }
       body{
         font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
         color: #f0f0f0;
+      }
+      .navigation{
+        background: #ec0e5f;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .nav-list{
+        display: flex;
+        list-style: none;
+      }
+      ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        padding: 10px;
+      }
+      #navbar li{
+        list-style: none;
+        text-decoration: none !important;
+        margin: 5px;
+      }
+      li a{
+        display: block;
+        font-size: 1.5rem;
+        text-decoration: none !important;
+        list-style: none !important;
+      }
+      .nav-list a:hover{
+        color: green;
+        background: grey;
       }
       .welcome{
         display: flex;
@@ -34,33 +72,34 @@
       h1{
         text-align: center;
       }
-      .navigation{
-        background: #ec0e5f;
-        display: flex;
-        justify-content: flex-end;
-        position: fixed;
-        list-style: none;
-        z-index: 10;
-        top: 0;
-        left: 0;
+      .project-section{
+        background: #4A2E3D;
         width: 100%;
+        height: 100vh;
+        text-align: center;
       }
-      .nav-list{
-        list-style: none;
-        margin-right: 10px;
+      .project-header{
+        padding-top: 100px;
       }
-      ul{
-        display: flex;
+      .project-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        width: 100%;
         text-decoration: none;
         list-style: none;
-        padding: 10px;
+        max-width: 1280px;
+        grid-gap: 4rem;
       }
-      li{
-        list-style: none;
-        text-decoration: none !important;
-        margin: 10px;
+      .project-image{
+        height: calc(100% - 6.8rem);
+        width: 50%;
       }
-      a{
+      p{
+        display: inline-grid;
+        background: grey;
+        color: white;
+        width: 50%;
+        height: 50%;
         text-decoration: none;
         list-style: none;
       }
@@ -83,6 +122,23 @@
     <section id="welcome-section" class="welcome">
       <h1>Hello! Welcome to my Personal Portfolio Page</h1>
       <h4>I`m an aspiring developer.</h4>
+    </section>
+    <section id="projects" class="project-section">
+      <h2 class="project-header">These are some of the projects which I`ve worked on @freeCodeCamp.</h2>
+      <div class="project-list">
+        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
+          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
+          <p class="project-title">Tribute Page</p>
+        </a>
+        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
+          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
+          <p class="project-title">Tribute Page</p>
+        </a>
+        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
+          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
+          <p class="project-title">Tribute Page</p>
+        </a>
+      </div>
     </section>
   </body>
 </html>
