@@ -75,31 +75,36 @@
       .project-section{
         background: #4A2E3D;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         text-align: center;
       }
       .project-header{
         padding-top: 100px;
       }
       .project-list{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 100%;
+        font-size: 16px;
         text-decoration: none;
         list-style: none;
-        max-width: 1280px;
-        grid-gap: 4rem;
       }
       .project-image{
-        height: calc(100% - 6.8rem);
+        height: 50%;
         width: 50%;
+        object-fit: cover;
       }
-      p{
-        display: inline-grid;
+      p {
+        display: inline-flex;
         background: grey;
         color: white;
         width: 50%;
         height: 50%;
+        text-decoration: none;
+        list-style: none;
+      }
+      .project-title{
         text-decoration: none;
         list-style: none;
       }
@@ -127,16 +132,20 @@
       <h2 class="project-header">These are some of the projects which I`ve worked on @freeCodeCamp.</h2>
       <div class="project-list">
         <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
-          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
-          <p class="project-title">Tribute Page</p>
+          <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Tribute+Page.png" alt="project image of tribute page">
+          <p class="project-title">Tribute Page Project</p>
         </a>
-        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
-          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
-          <p class="project-title">Tribute Page</p>
+        <a href="https://codepen.io/deepanshusarawagi/pen/JjjdNQw" target="blank">
+          <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Screenshot+2019-12-16+at+5.34.56+PM.png" alt="project image of tribute page">
+          <p class="project-title">Technical Documentation Page</p>
         </a>
-        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
-          <img class="project-image" src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/10/13/Pictures/addressed-president-millennium-children-students-lucknow-october2010_1102bb5a-b001-11e7-839f-5e4b0d653fbd.jpg" alt="project image of tribute page">
-          <p class="project-title">Tribute Page</p>
+        <a href="https://codepen.io/deepanshusarawagi/pen/KKKKvja" target="blank">
+          <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Product+Landing+Page.png" alt="project image of tribute page">
+          <p class="project-title">Product Landing Page</p>
+        </a>
+        <a href="https://codepen.io/deepanshusarawagi/pen/BaaawdL" target="blank">
+          <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Survey+Form.png" alt="project image of tribute page">
+          <p class="project-title">Product Landing Page</p>
         </a>
       </div>
     </section>
