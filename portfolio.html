@@ -105,7 +105,38 @@
         justify-content: center;
       }
       .contact-section{
-        
+        background: #53618C;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-section-header{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .contact-list{
+        display: flex;
+        justify-content: center;
+        max-width: 980px;
+        margin-top: 100px;
+        color: white;
+        flex-wrap: wrap;
+      }
+      .contact-list > a{
+        text-decoration: none;
+        color: white;
+      }
+      .contact-links{
+        display: inline-block;
+        transition: ease-out;
+        margin: 10px;
+      }
+      i{
+        display: inline-block;
       }
     </style>
   </head>
@@ -149,7 +180,19 @@
       </div>
     </section>
     <section id="contacts" class="contact-section">
-
+      <div class="contact-section-header">
+        <h2>For any queries you can contact by clicking on following links.</h2>
+      </div>
+      <div class="contact-list">
+        <a href="https://twitter.com/deepanshu0512" target="_blank" class="contact-links">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </a>
+        <a href="https://github.com/DeepanshuSarawagi" target="_blank" class="contact-links">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+      </div>
     </section>
   </body>
 </html>
