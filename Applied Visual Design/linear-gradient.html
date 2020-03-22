@@ -1,0 +1,35 @@
+<!-- we can also add a subtle background as image with any texture or pattern
+  by adding the url function. -->
+<style>
+  .linear{
+    background: linear-gradient(45deg, red, black);
+    position: absolute;
+    top: 10px;
+    width: 70%;
+    margin: 50px auto;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0 7px 7px rgba(0,0,0,0.19);
+    z-index: 2;
+  }
+  .repeating{
+    background: repeating-linear-gradient(45deg, red 0px, red 40px, blue 40px, blue 80px);
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2), 0 7px 7px rgba(0,0,0,0.19);
+    z-index: 1;
+  }
+  body{
+    background: url("https://i.imgur.com/MJAkxbh.png");
+  }
+  </style>
+  <body>
+<div class="linear">
+  </div>
+  <div class="repeating">
+    </div>
+    </body>

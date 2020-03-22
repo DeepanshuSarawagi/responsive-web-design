@@ -1,0 +1,103 @@
+<style>
+  .boxcontainer{
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #box1{
+    background: red;
+    height: 50%;
+    width: 50%;
+  }
+  #box2{
+    background: blue;
+    height: 50%;
+    width: 50%;
+  }
+  .profile img{
+    width: 80px;
+    height: 80px;
+    display: flex;
+  }
+  .follow{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 130px;
+  }
+  .profile-name{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-bottom: 200px;
+    margin-right: 75px;
+  }
+  h3{
+    display: flex;
+    margin-left: 160px;
+  }
+  .follow button{
+    position: absolute;
+    width: auto;
+    height: 30px;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  #inner p{
+    display: flex;
+  }
+  #inner hr{
+    opacity: 0.8;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerinfo{
+    display: flex;
+  }
+  footer .footerinfo .likes{
+    margin-left: 10px;
+  }
+  footer .cta{
+    margin-left: auto;
+    margin-top: -40px;
+  }
+</style>
+<div class="boxcontainer">
+  <div id="box1"></div>
+  <div id="box2"></div>
+</div>
+<div class="profile">
+<img src="https://pbs.twimg.com/profile_images/378800000147359764/54dc9a5c34e912f34db8662d53d16a39_400x400.png" alt="Quincy Larson`s image">
+</div>
+<div class="follow">
+<h2><strong class="profile-name">Qunicy Larson</strong></h2>
+<h3><strong>@oassia</strong></h3>
+<button type="button" name="button">Follow</button>
+</div>
+<div id="inner">
+  <p>I meet so many people online who are looking out for that one trick
+  which will help them work smart. Even if you work smart you will have to work
+hard.</p>
+<span class="date">1:32 PM - 12 Jan 2018</span>
+<hr>
+</div>
+<footer>
+  <div class="footerinfo">
+    <div class="retweets">
+  <strong>107</strong> Retweets
+  </div>
+    <div class="likes">
+  <strong>431</strong> Likes
+  </div>
+  </div>
+  <br>
+  <div class="cta">
+  <button>Share</button>
+  <button>Retweet </button>
+  <button>Like</button>
+  </div>
+</footer>
+</div>

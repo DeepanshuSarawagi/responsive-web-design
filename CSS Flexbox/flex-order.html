@@ -1,0 +1,36 @@
+<style>
+  #boxcontainer{
+    height: 500px;
+    display: flex;
+  }
+  #box1{
+    background: red;
+    height: 200px;
+    flex: 2 2 150px;
+    order: 2;
+  }
+  #box2{
+    background: blue;
+    height: 200px;
+    flex: 1 1 150px;
+    order: 1;
+  }
+  p{
+    position: absolute;
+    top: 200px;
+  }
+</style>
+<div id="boxcontainer">
+  <div id="box1">
+
+  </div>
+  <div id="box2">
+
+  </div>
+</div>
+<p>By default the items in the flex container will be arranged
+  default by the order source HTML code is written. However, you can arrange the
+  items in the order by speifying the order value in flex. Order property accepts
+  value in ascending order which means an item with flex order property with Order
+  value 1 will come first in line followed by 2, 3 etc.
+</p>

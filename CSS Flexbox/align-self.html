@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Align items</title>
+  </head>
+  <body>
+    <header>
+      <h1>Importance of Align self</h1>
+    </header>
+    <style>
+      #box-container{
+        background: gray;
+        height: 400px;
+        display: flex;
+        align-items: center;
+      }
+      #box1{
+        background: red;
+        width: 200px;
+        font-size: 18px;
+        height: 200px;
+        align-self: flex-start;
+      }
+      #box2{
+        background: blue;
+        width: 200px;
+        font-size: 24px;
+        height: 200px;
+        align-self: flex-end;
+      }
+      a:hover{
+        color: red;
+      }
+    </style>
+    <main>
+      <h2>How to implement the align self</h2>
+  <p>The final property for flex items is align-self. This property allows you
+    to adjust each item's alignment individually, instead of setting them all at
+     once. This is useful since other common adjustment techniques using the CSS
+      properties float, clear, and vertical-align do not work on flex items.
+      note that align-self takes precedence over align-items.
+</p>
+<h3>align-self accepts below values:</h3>
+<ul>
+  <li><strong>flex-start:</strong> aligns items to the start of the flex container. For a row,
+    this pushes the items to the left of the container. For a column, this pushes
+     the items to the top of the container.</li>
+     <li><strong>flex-end:</strong> aligns items to the end of the flex container. For a row,
+       this pushes the items to the right of the container. For a column, this
+       pushes the items to the bottom of the container.</li>
+       <li><strong>center:</strong> align items to the center. For rows, this vertically
+         aligns items (equal space above and below the items). For columns, this
+         horizontally aligns them (equal space to the left and right of the items).
+       </li>
+           <li><strong>stretch: </strong>stretch the items to fill the flex container.
+              For example, rows items are stretched to fill the flex container
+              top-to-bottom.</li>
+              <li><strong>baseline: </strong>align items to their baselines.
+                Baseline is a text concept, think of it as the line that the
+                letters sit on.</li>
+
+</ul>
+<p>To learn more about the justify-content, try to experiment the box boxcontainer.
+</p>
+<div id="box-container">
+  <div id="box1"><p>Hello, I take precedence over align-items since I`ve been assigned
+  a align-self property set to flex-start.</p></div>
+  <div id="box2"><p>Hello, I take precedence over align-items since I`ve been assigned
+  a align-self property set to flex-end.</p></div>
+  </div>
+    </main>
+  </body>
+</html>

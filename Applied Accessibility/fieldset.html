@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <h1>How to create a fieldset tag</h1>
+</header>
+<body>
+  <main>
+    <h2>Importance of fieldset tag</h2>
+    <p>Fieldset wraps the radio button grouping. It requires a legend tag which
+  helps the screen readers understand the desciption for the grouping of Radio
+buttons as input from users. </p>
+<form>
+  <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <fieldset>
+      <legend>Choose what type of Ninja are you:</legend>
+      <input type="radio" id="newbie" name="levels" value="newbie" checked>
+      <label for="newbie">New comer</label><br>
+      <input type="radio" id="intermediate" name="levels" value="intermediate">
+      <label for="intermediate">Developing Student</label><br>
+      <input type="radio" id="professional" name="levels" value="professional">
+      <label for="professional">Master</label><br>
+
+    </fieldset>
+  <input type="submit" name="submit" value="submit">
+</form>
+  </main>
+</body>

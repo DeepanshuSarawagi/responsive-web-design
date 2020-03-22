@@ -1,0 +1,57 @@
+<html>
+<!--Checkout the background-color: rgba() where a stands for opacity and it
+makes the background color transparent which makes the text readable.
+Generally we can add headers he to h6 and the font size of headers will be
+larger than the paragraph and helps the user to distinguish them. We can also
+add the font-size parameter in CSS classes and assign particular font size to
+a text. -->
+
+<style>
+  h1 {
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(45, 45, 45, 0.1);
+    font-size: 25px;
+  }
+  p {
+    text-align: justify;
+  }
+  .links{
+    margin-left: 20px;
+  }
+  .fullcard {
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 5px;
+
+  }
+  .cardcontent{
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  </style>
+  <div class="fullcard">
+      <div class="cardcontent">
+  <h1><s>Google</s></h1>
+  <!-- if we want to strike through a text then use <s> tag or we can use the
+  text-decoration: line-through; in the CSS class-->
+  <!-- if we want to show any text in bold which delivers a message then
+    wrap <strong> tag around those words-->
+    <!-- if we want to underline some text then we can use the <u> tag around
+      the words-->
+      <!-- if we want to italicise a text then we can use
+      font-style: italic; in CSS class or we can use <em> tag around the words-->
+      <!-- we can also create horizontal line by using the <hr> tag.
+        Kindly note this is a self closing tag-->
+        <hr>
+  <p><em>Google was founded by <strong>Larry Page and Sergey Brin</strong> when they were doing <u>Ph.D</u>.
+  They were students of Stanford University.</em> </p>
+  <div class="link">
+  <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank">Larry Page</a>
+  <a style="margin-left: 20px;" href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank">Sergey Brin</a>
+  </div>
+  </div>
+  </div>
+  </html>

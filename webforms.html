@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title> This is my first HTML page</title>
+  </head>
+  <body>
+<main>
+<p> We can create input in HTML tages like below. Please note that input is a
+  self closing tag</p>
+
+<input text="" placeholder=" ">
+<p> we can nest an input element inside a form element. This will help the user
+  to submit the data to a actual server. Additionally we can create submit button
+like below which will belp user to submit his data to the server</p>
+<p> now add required attribute in the input element if we want the user to
+  fill the form with the mandaotry fields. Just type required in the input element</p>
+  <form action="/submit-your-data">
+    <input text="" required>
+
+    <p> we can also create radio buttons in a form like below asking user to select
+      one option. Radio button is also a type of input and it is a best practice
+      if we use "for" attribute in label which matches with "id" so that one Radio
+      button is created for one "id" and name attribute should be common so that
+      user if selects other radio button then previous one is automatically deselected.
+    we can also have the default first value of radio button to be selected by default
+  by adding the "checked" attribute in radio element of input</p>
+      <label for="indoor">
+       <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor </label>
+      <label for="outdoor">
+        <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor</label>
+      <p>Checkboxes are a type of input from the user if there are multiple
+          options which can be selected. By wrapping an input element inside of a
+          label element it will automatically associate the checkbox input with the
+          label element surrounding it. All related checkbox inputs should have
+          a same "name" attribute. We can also have the first checkbox checked by
+        adding the "checked attribute in the input element</p>
+          <label for="loving">
+            <input id="loving" type="checkbox" name="personality" checked>Loving </label>
+          <label for="caring">
+            <input id="caring" type="checkbox" name="personality">Caring </label>
+          <label for="affectionate">
+            <input id="affectionate" type="checkbox" name="personality">Affectionate </label>
+        <button type="submit">Submit</button>
+    </form>
+  </main>
+  </body>
+</html>

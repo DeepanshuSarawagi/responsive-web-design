@@ -1,0 +1,30 @@
+<style>
+  #ballBounce{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    background: repeating-linear-gradient(45deg, gray 0px, gray 20px, black 20px, black 40px);
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce{
+    0%{
+      top: 0%;
+    }
+    50%{
+    top: 50%;
+    height: 75px;
+    width: 146px;
+  }
+  100%{
+    top: 0%;
+  }
+  }
+  </style>
+  <body>
+  <div id="ballBounce">
+    </div>
+    </body>

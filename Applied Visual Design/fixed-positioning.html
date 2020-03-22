@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- In this document we are going to create a very basic navigation bar and
+  how to implement fixed positioning in html, float and as well the
+use of z-index value. Generally in html if there are overlapping elements,
+those elements defined later come on of top other elements
+we can set the z-indix value to decide which element should appear first
+when it overlaps with others. The value of z-index value should always be
+integer and higher the z-index value, the element in the stack will
+appear higher-->
+
+  <html>
+  <style>
+    #navbar{
+
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color: gray;
+    }
+    nav ul{
+      margin: 0px;
+      padding: 5px 0px 5px 20px;
+    }
+    nav li{
+      display: inline;
+      margin-right: 30px;
+    }
+    h1{
+      position: relative;
+      top: 10px;
+    }
+    p{
+      position: relative;
+      top: 20px;
+
+    }
+    section, aside{
+      padding: 8px;
+      background: gray;
+      position: relative;
+      top: 20px;
+    }
+    #left{
+      width: 40%;
+      float: left;
+    }
+    #right{
+      width: 40%;
+      float: right;
+    }
+    div {
+      width: 50%;
+      height: 200px;
+      margin-top: 200px;
+    }
+    .first{
+      background: red;
+      position: absolute;
+      z-index: 2;
+    }
+    .second{
+      background: blue;
+      position: relative;
+      top: 60px;
+      left: 25px;
+      z-index: 1;
+    }
+    </style>
+
+
+
+    <body>
+      <header>
+      <h1>Welcome to the site</h1>
+      </header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+            <li><a href="">Contact Us</a></li>
+            </ul>
+            </nav>
+
+    <p> This is a paragraph which might move due to fixed positioning of
+      navigation bar.</p>
+      <section id="left">
+      <h2>Good things</h2>
+        <p>links</p>
+        </section>
+        <aside id="right">
+          <h2>Bad things</h2>
+          <p>links</p>
+          </aside>
+          <div class="first"></div>
+          <div class="second"></div>
+      </body>
+      </html>

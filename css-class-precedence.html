@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- in this document we will create a two CSS classes to modify the h1 text
+  and we will see that class 2 takes precedence over class 1-->
+
+  <style>
+    body {
+        color: grey;
+        background-color: yellow;
+      }
+    .red-text{
+      color: red;
+    }
+    .blue-text{
+      color: blue;
+      font-family: monospace;
+    }
+    #orange-text{
+      color: orange;
+    }
+    .red-text-important {
+      color: red !important;
+    }
+    </style>
+
+    <h1 class="red-text">Hello World</h1>
+    <h2 class="red-text blue-text">Hello World in Blue</h2>
+
+    <p> As you can see that header 1 has class with red test and header h2 has
+      class with red text and blue text however, class blue text takes precedence
+      over class 1 since its declared after it. </p>
+
+      <p> Now lets create one more header with an ID attribute along with CSS
+        classes and we will see that ID attribute takes precedence over CSS classes.
+        Also each ID attribute should be unique for each element and it cannot
+        be reused for anyother element.
+        </p>
+        <h3 class="red-text blue-text" id="orange-text">Hello World in Orange</h3>
+        <p>We are going to see below that how inline style is going to take
+          precedence over the CSS classes and ID attributes"
+          <h3 style="color: pink;" class="red-text blue-text" id="orange-text">Hello World in Pink</h3>
+          <p> We create multiple CSS style classes and accidentally we may override
+            it. Above examples show that in header element how inline styles,
+            takes precedence over ID attribute which in turn takes precedence over
+            CSS class 2 and then over class 1. Supposedly we still want our header
+            element to use the text color as RED then simply include "important" keyword
+            in the style.</p>
+            <h3 class="red-text blue-text red-text-important" id="orange-text">Hello World in Red</h3>
+            <style>
+              .penguin {
+
+                /* change code below */
+                --penguin-skin: gray;
+                --penguin-belly: white;
+                --penguin-beak: orange;
+                /* change code above */
+
+                position: relative;
+                margin: auto;
+                display: block;
+                margin-top: 5%;
+                width: 300px;
+                height: 300px;
+              }
+
+              .penguin-top {
+                top: 10%;
+                left: 25%;
+                background: var(--penguin-skin, gray);
+                width: 50%;
+                height: 45%;
+                border-radius: 70% 70% 60% 60%;
+              }
+
+              .penguin-bottom {
+                top: 40%;
+                left: 23.5%;
+                background: var(--penguin-skin, gray);
+                width: 53%;
+                height: 45%;
+                border-radius: 70% 70% 100% 100%;
+              }
+
+              .right-hand {
+                top: 0%;
+                left: -5%;
+                background: var(--penguin-skin, gray);
+                width: 30%;
+                height: 60%;
+                border-radius: 30% 30% 120% 30%;
+                transform: rotate(45deg);
+                z-index: -1;
+              }
+
+              .left-hand {
+                top: 0%;
+                left: 75%;
+                background: var(--penguin-skin, gray);
+                width: 30%;
+                height: 60%;
+                border-radius: 30% 30% 30% 120%;
+                transform: rotate(-45deg);
+                z-index: -1;
+              }
+
+              .right-cheek {
+                top: 15%;
+                left: 35%;
+                background: var(--penguin-belly, white);
+                width: 60%;
+                height: 70%;
+                border-radius: 70% 70% 60% 60%;
+              }
+
+              .left-cheek {
+                top: 15%;
+                left: 5%;
+                background: var(--penguin-belly, white);
+                width: 60%;
+                height: 70%;
+                border-radius: 70% 70% 60% 60%;
+              }
+
+              .belly {
+                top: 60%;
+                left: 2.5%;
+                background: var(--penguin-belly, white);
+                width: 95%;
+                height: 100%;
+                border-radius: 120% 120% 100% 100%;
+              }
+
+              .right-feet {
+                top: 85%;
+                left: 60%;
+                background: var(--penguin-beak, orange);
+                width: 15%;
+                height: 30%;
+                border-radius: 50% 50% 50% 50%;
+                transform: rotate(-80deg);
+                z-index: -2222;
+              }
+
+              .left-feet {
+                top: 85%;
+                left: 25%;
+                background: var(--penguin-beak, orange);
+                width: 15%;
+                height: 30%;
+                border-radius: 50% 50% 50% 50%;
+                transform: rotate(80deg);
+                z-index: -2222;
+              }
+
+              .right-eye {
+                top: 45%;
+                left: 60%;
+                background: black;
+                width: 15%;
+                height: 17%;
+                border-radius: 50%;
+              }
+
+              .left-eye {
+                top: 45%;
+                left: 25%;
+                background: black;
+                width: 15%;
+                height: 17%;
+                border-radius: 50%;
+              }
+
+              .sparkle {
+                top: 25%;
+                left: 15%;
+                background: white;
+                width: 35%;
+                height: 35%;
+                border-radius: 50%;
+              }
+
+              .blush-right {
+                top: 65%;
+                left: 15%;
+                background: pink;
+                width: 15%;
+                height: 10%;
+                border-radius: 50%;
+              }
+
+              .blush-left {
+                top: 65%;
+                left: 70%;
+                background: pink;
+                width: 15%;
+                height: 10%;
+                border-radius: 50%;
+              }
+
+              .beak-top {
+                top: 60%;
+                left: 40%;
+                background: var(--penguin-beak, orange);
+                width: 20%;
+                height: 10%;
+                border-radius: 50%;
+              }
+
+              .beak-bottom {
+                top: 65%;
+                left: 42%;
+                background: var(--penguin-beak, orange);
+                width: 16%;
+                height: 10%;
+                border-radius: 50%;
+              }
+
+              body {
+                background:#c6faf1;
+              }
+
+              .penguin * {
+                position: absolute;
+              }
+            </style>
+            <div class="penguin">
+              <div class="penguin-bottom">
+                <div class="right-hand"></div>
+                <div class="left-hand"></div>
+                <div class="right-feet"></div>
+                <div class="left-feet"></div>
+              </div>
+              <div class="penguin-top">
+                <div class="right-cheek"></div>
+                <div class="left-cheek"></div>
+                <div class="belly"></div>
+                <div class="right-eye">
+                  <div class="sparkle"></div>
+                </div>
+                <div class="left-eye">
+                  <div class="sparkle"></div>
+                </div>
+                <div class="blush-right"></div>
+                <div class="blush-left"></div>
+                <div class="beak-top"></div>
+                <div class="beak-bottom"></div>
+              </div>
+            </div>

@@ -1,0 +1,32 @@
+<style>
+  #boxcontainer{
+    height: 500px;
+    display: flex;
+  }
+  #box1{
+    background: red;
+    height: 200px;
+    flex: 2 2 150px;
+  }
+  #box2{
+    background: blue;
+    height: 200px;
+    flex: 1 1 150px;
+  }
+  p{
+    position: absolute;
+    top: 200px;
+  }
+</style>
+<div id="boxcontainer">
+  <div id="box1">
+
+  </div>
+  <div id="box2">
+
+  </div>
+</div>
+<p>we can use the shorthand for flex property by combining flex-grow, flex-shrink
+and flex-basis together in a single flex: property. The following property
+flex: 1 1 150px means a flex item can grow with grow 1 time larger, will shrink 1
+time smaller and will have a initial basis value set to 150px.</p>

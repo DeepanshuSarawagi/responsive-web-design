@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Template Area</title>
+  </head>
+<style>
+  .container{
+    background: gray;
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    grid-template-areas: "header header header"
+                         "advert content content"
+                         "footer footer footer";
+  }
+  .box1{
+    background: violet;
+  }
+  .box2{
+    background: indigo;
+    grid-area: content;
+    grid-column: 2/3;
+    z-index: 1;
+  }
+  .box3{
+    background: blue;
+    grid-area: content;
+  }
+  .box4{
+    background: green;
+  }
+  .box5{
+    background: yellow;
+  }
+  .box6{
+    background: orange;
+    grid-area: footer;
+  }
+</style>
+  <body>
+    <main>
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+    </div>
+    <p>We can use the grid-template-areas property and then group each cell to
+    one area and give a custom name. For example, we have named first row which
+  consists of three cells together as header. and last row as footer. Middle row
+  is divided into advert as one cell and content as two cells. </p>
+    </main>
+  </body>
+</html>

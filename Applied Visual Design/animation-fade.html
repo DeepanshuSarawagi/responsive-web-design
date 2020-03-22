@@ -1,0 +1,23 @@
+<style>
+  #ball{
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  @keyframes fade{
+    50%{
+      left: 60%;
+      opacity: 0.019;
+    }
+  }
+  </style>
+  <div id="ball"></div>
+
+<!-- we have added the animation for ball to fade when it moves right and adding
+  opacity property will fade the ball as it moves right-->

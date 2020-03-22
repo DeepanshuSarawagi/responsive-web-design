@@ -1,0 +1,28 @@
+<style>
+  #box-container{
+    height: 400px;
+    display: flex;
+  }
+  #box1{
+    background: red;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 1;
+  }
+  #box2{
+    background: lightpink;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 2;
+  }
+</style>
+<div id="box-container">
+  <div id="box1"></div>
+  <div id="box2"></div>
+</div>
+<p>In this lesson we have learnt about flex-shrink. Consider that we have a
+flex-container which is smaller in size than the items, then we can use flex-shrink
+property for each item to shrink in the container by reducing the size.</p>
+<p>flex-shrink accepts the values as a number and higher the number, more the
+flex item will shrink. see the flex-shrink property set for box1 and box2.
+Note that flex shrink property will not work if you set the width to auto.</p>

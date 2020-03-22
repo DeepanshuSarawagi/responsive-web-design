@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is a cat photo app</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="css-selector red-text">Cat Photo App</h2>
+      <!--<h2 style="color: red;">Cat Phto App</h2>-->
+      <p>in the css.html document we could see that we have created a separated
+        style element and had all h2 elements to be in red color. Now we are
+      going to create the css classes and apply that class in the h2 element.
+    hence by creating the class we can apply this css class style to other html
+  elements in the documents. Also note that classes in css starts with a dot</p>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+      <style>
+        .red-text {color: red;}
+        .css-selector {font-family: Lobster;}
+        p {
+          font-size: 16px;
+          font-family: Times New Roman;
+        }
+        </style>
+        <p class="red-text"> I`m creating a paragraph here by applying the css
+          style class "red-text" here. Check the style element and we can
+        see that I`ve added the  font size for all p elements to 16pixels</p>
+        <p> we have also added the font-family attribute in style element to set
+          all the "p" elements to use font as Times New Roman</p>
+          <p>We can also import external fonts by using external libraries and
+            use that in our style sheets by applying to them in elements.For ex
+            we have imported the google apis font and will apply to h2 elements
+            in CSS</p>
+      <a href="http://freecatphotoapp.com" target="_blank">Free Cat Photo</a>
+      <img src="https://bit.ly/fcc-relaxing-cat" alt="A relaxing cat photo">
+      <div>
+        <p>We are going to create a list which cat loves</p>
+        <ul>
+          <li>milk</li>
+          <li>cheese</li>
+                  </ul>
+          <p> now we are going to create ordered list about two things which
+            cat hate</p>
+            <ol>
+              <li>mouse</li>
+              <li>fire</li>
+              </ol>
+                    </div>
+<form action="/submit-your-data-here">
+  <input type="text" placeholder="this is a placeholder text" required>
+  <label for="indoor">
+    <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label>
+    <label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor</label>
+      <label for="loving">
+        <input id="loving" type="checkbox" name="personality" checked>loving</label>
+        <label for="caring">
+        <input id="caring" type="checkbox" name="personality">caring</label>
+        <button type="Submit">Submit</button>
+        </form>
+    </main>
+  </body>
+  </html>

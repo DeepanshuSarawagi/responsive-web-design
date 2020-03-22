@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>This is a cat photo app</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="css-selector red-text">Cat Photo App</h2>
+      <!--<h2 style="color: red;">Cat Phto App</h2>-->
+      <p>in the css.html document we could see that we have created a separated
+        style element and had all h2 elements to be in red color. Now we are
+      going to create the css classes and apply that class in the h2 element.
+    hence by creating the class we can apply this css class style to other html
+  elements in the documents. Also note that classes in css starts with a dot</p>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+      <style>
+        .red-text {color: red;}
+        .css-selector {font-family: Lobster;}
+        .small-image {
+          width: 100px;
+        }
+        .solid-blue-border {
+          border-color: blue;
+          border-width: 2px;
+          border-style: solid;
+          border-radius: 20%;
+        }
+        .silver-background {
+          background-color: silver;
+        }
+        p {
+          font-size: 16px;
+          font-family: Times New Roman;
+        }
+        #cat-photo-form{
+          background-color: grey;
+        }
+        [type='checkbox']{
+          margin: 20px 10px 15px 0px;
+        }
+        </style>
+        <p class="red-text"> I`m creating a paragraph here by applying the css
+          style class "red-text" here. Check the style element and we can
+        see that I`ve added the  font size for all p elements to 16pixels</p>
+        <p> we have also added the font-family attribute in style element to set
+          all the "p" elements to use font as Times New Roman</p>
+          <p>We can also import external fonts by using external libraries and
+            use that in our style sheets by applying to them in elements.For ex
+            we have imported the google apis font and will apply to h2 elements
+            in CSS</p>
+      <a href="http://freecatphotoapp.com" target="_blank">Free Cat Photo</a>
+      <!-- we have included the class "small-image" so that image width is reduced
+        to 100px-->
+
+      <img class="small-image solid-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A relaxing cat photo">
+      <!-- we can give a background color to the text we want to specify-->
+
+      <div class="silver-background">
+        <p>We are going to create a list which cat loves</p>
+        <ul>
+          <li>milk</li>
+          <li>cheese</li>
+                  </ul>
+          <p> now we are going to create ordered list about two things which
+            cat hate</p>
+            <ol>
+              <li>mouse</li>
+              <li>fire</li>
+              </ol>
+                    </div>
+                    <!-- we can also add the id for each elements and later
+                    style them and modify specific elements using javascript.
+                  we can style the form by using the ID attribute in style
+                element. And also id will start with a # and it will be used
+              only once. That is each "id" should be unique for each element.
+            if there is a class attribute and an ID attribute in a specific
+          element then ID attribute preference will have higher importance-->
+<form action="/submit-your-data-here" id="cat-photo-form">
+  <input type="text" placeholder="this is a placeholder text" required>
+  <label for="indoor">
+    <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label>
+    <label for="outdoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor</label>
+      <label for="loving">
+        <!--now to give the checkboxes a CSS style, we will use the [Type=Attribue]
+        CSS selector to give checkboxes desired style. check out the code under
+        style element-->
+        <input id="loving" type="checkbox" name="personality" checked>loving</label>
+        <label for="caring">
+        <input id="caring" type="checkbox" name="personality">caring</label>
+        <button type="Submit">Submit</button>
+        </form>
+    </main>
+  </body>
+  </html>

@@ -1,0 +1,53 @@
+<style>
+  .container{
+    background: lightgray;
+    width: 100%;
+    display: grid;
+    font-size: 40px;
+    text-align: center;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 1fr 100px 1fr;
+    grid-gap: 10px 20px;
+    justify-items: center;
+  }
+  .box1{
+    background: lightpink;
+  }
+  .box2{
+    background: lightblue;
+  }
+  .box3{
+    background: orange;
+  }
+  .box4{
+    background: skyblue;
+    align-self: center;
+  }
+  .box5{
+    background: lightyellow;
+    grid-column: 3/4;
+    grid-row: 2/4;
+    justify-self: start;
+    align-self: center;
+  }
+</style>
+<div class="container">
+  <div class="box1">1</div>
+  <div class="box2">2</div>
+  <div class="box3">3</div>
+  <div class="box4">4</div>
+  <div class="box5">5</div>
+</div>
+<body>
+  <main>
+<p>sometimes we want all the items in CSS grid to align themselves
+  horizontally. To align all the items horizantally we can use justify-items
+  property. It will accept below values.
+  <ul>
+    <li>start</li>
+    <li>end</li>
+    <li>center</li>
+  </ul>
+</body>
+</p>
+</body>

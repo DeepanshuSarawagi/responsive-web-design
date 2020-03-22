@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Template Area</title>
+  </head>
+<style>
+  .container{
+    background: gray;
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .box1{
+    background: violet;
+  }
+  .box2{
+    background: indigo;
+  }
+  .box3{
+    background: blue;
+  }
+  .box4{
+    background: green;
+  }
+  .box5{
+    background: yellow;
+    grid-area: 3/1/4/4;
+    /* as you can see in this example, we have set box5 to cover row3 and column
+    1 to column3 */
+  }
+  .box6{
+    background: orange;
+  }
+</style>
+  <body>
+    <main>
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+    </div>
+    <p>consider that we need 100 rows in a grid area and 50 cloumns with same size.
+    It would be practically impossible to enter 100 row values of different or same size.
+  Hence we can use the repeat function to create such. grid-template-rows: repeat(100, 50px);
+will create 100 rows with 50px tall. grid-template-columns: repeat(50, 100px); will
+create 50 columns with 100px in width. We can also enter multiple values in following
+way grid-template-rows: repeat(2, 100px 50px) 75px; This will create rows with
+follwing values 100px 50px 100px 50px 75px. </p>
+    </main>
+  </body>
+</html>

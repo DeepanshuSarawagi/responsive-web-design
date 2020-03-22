@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Template Area</title>
+  </head>
+<style>
+  .container{
+    background: gray;
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    grid-template-areas: "header header header"
+                         "advert content content"
+                         "footer footer footer";
+  }
+  .box1{
+    background: violet;
+  }
+  .box2{
+    background: indigo;
+  }
+  .box3{
+    background: blue;
+  }
+  .box4{
+    background: green;
+  }
+  .box5{
+    background: yellow;
+  }
+  .box6{
+    background: orange;
+    grid-area: footer;
+
+  }
+</style>
+  <body>
+    <main>
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+    </div>
+    <p>Here we can tell the items to be placed in which cell. In the exmaple code
+    above we will be placing box6 in footer area by using the grid-area property. Since
+  cell no 7, 8 and 9 are combined together as footer area. box6 item will occupy
+the entire area. </p>
+    </main>
+  </body>
+</html>

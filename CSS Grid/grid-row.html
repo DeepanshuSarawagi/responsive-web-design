@@ -1,0 +1,42 @@
+<style>
+  .container{
+    background: lightgray;
+    width: 100%;
+    display: grid;
+    font-size: 40px;
+    text-align: center;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 1fr 100px 1fr;
+    grid-gap: 10px 20px;
+  }
+  .box1{
+    background: lightpink;
+  }
+  .box2{
+    background: lightblue;
+  }
+  .box3{
+    background: orange;
+  }
+  .box4{
+    background: skyblue;
+  }
+  .box5{
+    background: lightyellow;
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+</style>
+<div class="container">
+  <div class="box1">1</div>
+  <div class="box2">2</div>
+  <div class="box3">3</div>
+  <div class="box4">4</div>
+  <div class="box5">5</div>
+</div>
+<body>
+  <main>
+<p>As seen in the grid-column example we spanned the box5 from column 3 to
+  column 4. In this example we have spanned the box5 from row 3 to row4.</p>
+</main>
+</body>
