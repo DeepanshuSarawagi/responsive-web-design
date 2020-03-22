@@ -90,6 +90,11 @@
         text-decoration: none;
         list-style: none;
       }
+      @media (max-width: 600px) {
+        .project-list{
+          grid-template-columns: 1fr;
+        }
+      }
       .project-image{
         width: 50%;
         object-fit: cover;
@@ -138,6 +143,25 @@
       i{
         display: inline-block;
       }
+      .footer-section{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: 4px solid #ec0e5f;
+        background: #4d4d4d;
+        color: white;
+      }
+      .footer-section > i{
+        display: inline-block;
+        color: white;
+      }
+      .footer-section > a{
+        color: white;
+        text-decoration: none;
+      }
+      .footer-section > p{
+        margin: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -161,19 +185,19 @@
     <section id="projects" class="project-section">
       <h2 class="project-header">These are some of the projects which I`ve worked on @freeCodeCamp.</h2>
       <div class="project-list">
-        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank">
+        <a href="https://codepen.io/deepanshusarawagi/pen/MWWWEmQ" target="blank" class="project-tile">
           <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Tribute+Page.png" alt="project image of tribute page">
           <p class="project-title">Tribute Page Project</p>
         </a>
-        <a href="https://codepen.io/deepanshusarawagi/pen/JjjdNQw" target="blank">
+        <a href="https://codepen.io/deepanshusarawagi/pen/JjjdNQw" target="blank" class="project-tile">
           <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Screenshot+2019-12-16+at+5.34.56+PM.png" alt="project image of tribute page">
           <p class="project-title">Technical Documentation Page</p>
         </a>
-        <a href="https://codepen.io/deepanshusarawagi/pen/KKKKvja" target="blank">
+        <a href="https://codepen.io/deepanshusarawagi/pen/KKKKvja" target="blank" class="project-tile">
           <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Product+Landing+Page.png" alt="project image of tribute page">
           <p class="project-title">Product Landing Page</p>
         </a>
-        <a href="https://codepen.io/deepanshusarawagi/pen/BaaawdL" target="blank">
+        <a href="https://codepen.io/deepanshusarawagi/pen/BaaawdL" target="blank" class="project-tile">
           <img class="project-image" src="https://sarawagi.s3.amazonaws.com/Survey+Form.png" alt="project image of tribute page">
           <p class="project-title">Product Landing Page</p>
         </a>
@@ -184,15 +208,28 @@
         <h2>For any queries you can contact by clicking on following links.</h2>
       </div>
       <div class="contact-list">
-        <a href="https://twitter.com/deepanshu0512" target="_blank" class="contact-links">
+        <a id="profile-link" href="https://twitter.com/deepanshu0512" target="_blank" class="contact-links">
           <i class="fab fa-twitter"></i>
           Twitter
         </a>
-        <a href="https://github.com/DeepanshuSarawagi" target="_blank" class="contact-links">
+        <a id="profile-link" href="https://github.com/DeepanshuSarawagi" target="_blank" class="contact-links">
           <i class="fab fa-github"></i>
           GitHub
         </a>
+        <a id="profile-link" href="https://codepen.io/deepanshusarawagi" target="_blank" class="contact-links">
+          <i class="fab fa-codepen"></i>
+          CodePen
+        </a>
       </div>
     </section>
+      <footer class="footer-section">
+        <p>This is just a sample portfolio created to complete project on @freeCodeCamp.</p>
+        <p>Follow
+           <a href="https://www.freecodecamp.org/" target="_blank">
+             freeCodeCamp
+             <i class="fab fa-free-code-camp"></i> 
+            </a>
+          </p>
+      </footer>
   </body>
 </html>
